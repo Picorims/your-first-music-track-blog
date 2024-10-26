@@ -24,5 +24,15 @@
     */
    
    import { base } from "$app/paths";
-   import { BlogPost } from "svelte-blogging-kit";
+   import { BlogPage } from "svelte-blogging-kit";
 </script>
+
+<BlogPage
+    postTitle="Hello World"
+    {postContent}
+    date="2024-01-01"
+/>
+
+{#snippet postContent()}
+    <span>hello</span>
+{/snippet}
