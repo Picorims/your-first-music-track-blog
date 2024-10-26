@@ -2,6 +2,12 @@
 	"name": "your-first-music-track-blog",
 	"version": "0.0.1",
 	"type": "module",
+	"author": {
+		"name": "Charly Schmidt aka Picorims",
+		"email": "picorims.contact@gmail.com"
+	},
+	"license": "MPL-2.0",
+	"private": true,
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
