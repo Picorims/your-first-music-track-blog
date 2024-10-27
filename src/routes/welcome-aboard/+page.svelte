@@ -20,6 +20,7 @@
 	postTitle="1 - Welcome aboard!"
 	{postContent}
 	date="10/11/2024"
+	categories={['Introduction']}
 	urlComments="https://your-first-music-track.weebly.com/blog/welcome-aboard"
 />
 <!--american date mm-dd-yyyy-->
