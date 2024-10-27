@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="./_app/immutable/assets/0.1sIooP6a.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Image.CzQULIkP.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.pXHfsS9h.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.C6sa2gWT.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/runtime.p8atZLvP.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.BzvmUSJ5.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.C1PVVhYa.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/store.BHCrUTY-.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/disclose-version.BLDzyfDt.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/props.63sEdPN1.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.CMymx0Tx.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/3.CYYHd2RL.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Image.6yEPHu6t.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><!----><!----><div class="custom-theme svelte-1nvquhh"><header class="__sbk__blog-header"><div class="header-content svelte-kfrs05"><!--[--><a href="https://your-first-music-track.weebly.com/" class="__sbk__blog-header-title">Your First Music Track</a><!--]--></div></header><!----> <div class="page-content __sbk__page-content svelte-1nvquhh"><main class="__sbk__page-main svelte-1nn5vfk"><!--[--><a class="__sbk__all-posts-link" href="https://your-first-music-track.weebly.com/blog">Back to all posts</a><!--]--> <h1 class="__sbk__post-title">2 - Drums: Understanding rhythm</h1> <div class="metadata __sbk__post-metadata svelte-1nn5vfk"><span class="__sbk__post-date">10/27/2024</span> <!--[--><span class="__sbk__post-categories"><span>Categories:</span> <!--[--><span>Music Theory</span><!--]--></span><!--]--></div> <hr class="__sbk__post-header-separator"> <article class="__sbk__post-content svelte-1nn5vfk"><div class="__sbk__component-framed-text-block" data-variant="note"><p><strong class="title">Note</strong>: <span class="content">This post will be longer than usual due to all the information needed to get started. Sorry!</span></p></div><!----> <p>In this chapter, we will learn about rhythm and duration in music by writing the drum loop of
+		our track. But first, there are a few things that you should be aware of.</p> <h2>Before getting started</h2> <p>First, don't be too harsh on yourself. Each topic that I will cover is an entire subject by
+		itself, with a lot to learn, and much practice needed to be comfortable with their concepts. If
+		you are lost, it is OK! Take it as an introductory course, an overview. Don't hesitate to ask
+		questions! If you plan to dive deeper into writing music, this will give you some insight into
+		what resources and topics to look for.</p> <p>Secondly, the order of topics is arbitrary. All musicians have their own preferences when it
+		come to writing music. Here, I tried to order things so that the learning process is as smooth
+		as possible. If you try the whole process again later by yourself, use whatever order you wish!</p> <p>Lastly, we are going to use a piece of software called a <span class="technical-term"><!---->DAW<!----></span><!---->, which stands for <span class="technical-term"><!---->Digital Audio Workstation<!----></span><!----> (<a href="https://en.wikipedia.org/wiki/Digital_audio_workstation" target="_blank" rel="noopener noreferrer"><!---->read more on Wikipedia<!----></a><!---->). Basically, it is a virtual studio to create and process audio files and streams.<br> The DAW that we will use in this course is <a href="https://www.bandlab.com/creation-features" target="_blank" rel="noopener noreferrer"><!---->BandLab<!----></a><!---->. It is
+		free, available in a browser or as a web app, and beginner friendly. However, you can quickly
+		get limited, and it is unstable with a bad internet connection (I lost the draft of this course
+		that way, it refused to save!). So, I recommend creating "duplicates" frequently, saving your
+		regions or patterns to MIDI and taking screenshots of your effects configuration. Better be safe
+		than sorry!<br> Alternatively, free DAWs include LMMS and Ardour. You can also use a trial of some professional software,
+		such as Ableton Live (90 days), Bitwig (30 days, too short!), FL Studio (cannot open saves in the
+		trial), etc. There are also mobile apps of varying quality, which I would generally not recommend.
+		Other than that, use what you want!</p> <p>OK, that being said, let's dive right into it!</p> <h2>Time measurement: beat, bars, bpm</h2> <p>In music, a unit of time is a <span class="technical-term"><!---->beat<!----></span><!---->. We group beats into <span class="technical-term"><!---->bars<!----></span><!---->. Bars are used to group beats and to ease areas delimitation. For
+		instance, we use it to define the length of a chorus, a verse, or a bridge. We also usually
+		change of chord on a bar change. If all of this is blurry, it is OK, just remember that
+		commonly:</p> <p style="font-size: 1.5rem;"><strong>1 bar = 4 beats</strong></p> <div class="__sbk__component-framed-text-block" data-variant="note"><p><strong class="title">Note</strong>: <span class="content">Some genres like waltz traditionally do not follow this rule. If you want to dive more into this concept, browse time signatures.</span></p></div><!----> <p>All note durations are measured in beats (although their names refer to duration based on bars).
+		Here are the most common ones, represented in a <span class="technical-term"><!---->music sheet<!----></span><!----> and a <span class="technical-term"><!---->MIDI grid<!----></span><!----> (both represent the same melody).</p> <figure class="__sbk__component-image svelte-nl6xx5"><img src="./_app/immutable/assets/note_durations_1.BKGmLlsj.png" alt="Music sheet with note durations: whole = 4 beats, dotted-half = 3 beats, half = 2 beats, quarter = 1 beat, eighth = 1/2 beat, sixteenth = 1/4 beat" class="svelte-nl6xx5"> <!--[--><figcaption class="svelte-nl6xx5">There are 5 bars in the example above.</figcaption><!--]--></figure><!----> <figure class="__sbk__component-image svelte-nl6xx5"><img src="./_app/immutable/assets/note_durations_2.zfkt_N00.png" alt="MIDI grid with note durations: dotted-quarter: 1 + 1/2 beats" class="svelte-nl6xx5"> <!--[--><figcaption class="svelte-nl6xx5">A dot adds half of the duration of the symbol on which we put it. That is why a dotted-half is 3 beats (2 + (2/2) = 2+1 = 3).</figcaption><!--]--></figure><!----> <figure class="__sbk__component-image svelte-nl6xx5"><img src="./_app/immutable/assets/note_durations_midi.YRTb6UYF.png" alt="MIDI grid representation of the music sheet presented above" class="svelte-nl6xx5"> <!--[--><figcaption class="svelte-nl6xx5">The equivalent melody in a MIDI grid: on the horizontal axis, in bars (written above as [bar].[beat]), we represent the time. On the vertical axis, we represent the pitch (the note we want to play). A rectangle is thus one note with a given duration.</figcaption><!--]--></figure><!----> <a class="__sbk__component-file-attachment" href="/_app/immutable/assets/music_sheet_examples_duration.Bn7HmOG1.mp3" target="_blank" rel="noopener noreferrer"><span class="icon"><!--[-->🎵<!--]--></span> <span class="name">music_sheet_examples_duration.Bn7HmOG1.mp3</span></a><!----> <audio class="__sbk__component-audio" src="./_app/immutable/assets/music_sheet_examples_duration.Bn7HmOG1.mp3" controls></audio><!----> <p><em>Argh!</em> What are all these symbols?! Do not worry, you do not have to remember all of it.
+		The music sheet is only here in case you stumble on one during your browsing. I will frequently remind
+		the vocabulary and duration, and will mostly use the MIDI grid.</p> <p>Here, our melody lasts approximately fifteen seconds. Is it arbitrary? Of course not! The speed
+		is measured in <span class="technical-term"><!---->beats per minute<!----></span><!---->, or <span class="technical-term"><!---->bpm<!----></span><!---->. Here, we use
+		a bpm of 80. If you increase this number, it will play faster. You can try this out by
+		downloading the MIDI file below. Create an account on BandLab, create a new project from your
+		profile page (at the top right), and at the bottom of the studio pop-up, choose to import the
+		midi file.</p> <a class="__sbk__component-file-attachment" href="/_app/immutable/assets/durations_example.CXBgKOxS.mid" target="_blank" rel="noopener noreferrer"><span class="icon"><!--[-->🎵<!--]--></span> <span class="name">durations_example.CXBgKOxS.mid</span></a><!----> <p>To align itself to the music speed, a musician uses a <span class="technical-term"><!---->metronome<!----></span><!---->. While here
+		the computer plays for us, it can be handy for reference, recording, etc. In BandLab, you can
+		enable it at the top, next to the bpm option.</p> <figure class="__sbk__component-image svelte-nl6xx5"><img src="./_app/immutable/assets/bpm_bandlab.C5XUpJzb.png" alt="BandLab interface with the metronome and bpm options" class="svelte-nl6xx5"> <!--[--><figcaption class="svelte-nl6xx5">You can also change the time signature here if you are familiar with this concept.</figcaption><!--]--></figure><!----> <p>OK, now that we share the same vocabulary, let's write our first drum loop!</p> <h2>A basic drum loop</h2> <p>If you haven't created your project at this point, create a new one and choose to start with a
+		virtual instrument. You can also start from the MIDI example if you wish, in this case, click on
+		the button with a "+" in the top left to add a virtual instrument track.</p> <p>Notice that the instrument tab is now selected at the bottom. There, above the piano, choose a
+		preset in the <span class="technical-term"><!---->drum kits<!----></span><!----> or <span class="technical-term"><!---->drum pads<!----></span><!---->. I will
+		personally try to write some lo-fi music, so I will choose "Lofi Hop". I will also change the
+		bpm at the top to 90 as I want it to be calm.</p> <figure class="__sbk__component-image svelte-nl6xx5"><img src="./_app/immutable/assets/steps_new_drum_kit.DjRxolvx.png" alt="Steps to create a new drum kit in BandLab visualized" class="svelte-nl6xx5"> <!--[!--><!--]--></figure><!----> <p>The most basic drum kit pattern uses three different percussions (<a href="https://en.wikipedia.org/wiki/Drum_kit" target="_blank" rel="noopener noreferrer"><!---->a schema is available on Wikipedia<!----></a><!---->): the <span class="technical-term"><!---->kick<!----></span><!----> or <span class="technical-term"><!---->bass drum<!----></span><!---->, the <span class="technical-term"><!---->snare drum<!----></span><!----> or just <span class="technical-term"><!---->snare<!----></span><!---->, and the <span class="technical-term"><!---->hi-hat<!----></span><!---->, which can be opened
+		or closed. The kick is a deep heartbeat like sound, we will use it every beat (or <span class="technical-term"><!---->quarter<!----></span><!---->, 1 beat) as a reference. The snare is a powerful drum, we will use it to accentuate the second
+		and fourth beat of each bar (using <span class="technical-term"><!---->half notes<!----></span><!---->, 2 beats). Finally, the
+		hi-hat is useful for fast rhythmic. We will use <span class="technical-term"><!---->eighth<!----></span><!----> notes (1/2 beat), with
+		one every four notes being an open hi-hat.</p> <p>Double click at the start of the drum kit track (highlighted in purple on the picture above) to
+		create a new region. Place your mouse at its end and drag the border to extend it to 4 bars
+		instead of 1.</p> <p>Let's move on to the MIDI Editor at the bottom left. Pick the pencil tool on the left to place
+		notes with your mouse. Use the arrow to select notes by clicking or dragging. This allows you to
+		cut, copy, paste, or delete notes. Use the magnifying glass icons to zoom the grid in or out. To
+		increase the height of the grid, place your mouse on the top border of the panel and drag the
+		mouse while having a double arrow cursor visible. <em>DO NOT FORGET TO <em>SAVE YOUR WORK</em> REGULARLY!</em></p> <figure class="__sbk__component-image svelte-nl6xx5"><img src="./_app/immutable/assets/basic_drum_loop.CQ3lGJfx.png" alt="Basic drum loop in BandLab (MIDI grid and steps)" class="svelte-nl6xx5"> <!--[--><figcaption class="svelte-nl6xx5">Here, I chose to use the stick on a snare instead of the snare itself, just because I want to use its sound. But you can choose whatever sound you prefer!</figcaption><!--]--></figure><!----> <p>The result should sound similar to this:</p> <a class="__sbk__component-file-attachment" href="/_app/immutable/assets/basic_drum_pattern.DTvX3ws_.wav" target="_blank" rel="noopener noreferrer"><span class="icon"><!--[-->🎵<!--]--></span> <span class="name">basic_drum_pattern.DTvX3ws_.wav</span></a><!----> <audio class="__sbk__component-audio" src="./_app/immutable/assets/basic_drum_pattern.DTvX3ws_.wav" controls loop></audio><!----> <h2>Variation: spicing things up (OPTIONAL)</h2> <p>This sounds nice, but it is a bit boring and repetitive. If you have a bit of experience in
+		music (or if you are curious), we can push things a bit further.</p> <p>The first change that we are going to do is not that commonly heard, but is used in genres like
+		blues or <a href="https://en.wikipedia.org/wiki/Groove_(music)" target="_blank" rel="noopener noreferrer"><!---->jazz<!----></a><!---->,
+		and by artists like TheFatRat. I am talking about the <span class="technical-term"><!---->groove<!----></span><!---->. Put simply,
+		we extend then shrink alternatively the length of an <span class="technical-term"><!---->eighth<!----></span><!----> (1/2 beat). Usually, the beat is split as 2/3 and 1/3 instead of the common 1/2 and 1/2 split.</p> <p>Right click on the MIDI grid, and choose 1/8T (which stands for 1/8 of a bar (= 1/2 beat),
+		ternary mode). Notice that each beat now has three columns instead of two. Let's extend the
+		first half of each beat to two cells, and the second half to one.</p> <div class="__sbk__component-framed-text-block" data-variant="tip"><p><strong class="title">Tip</strong>: <span class="content">You can do this on a few beats and copy it fast. Go to mouse mode, select all the notes, hold Alt and the left click on a selected note, and move your mouse to the right. Do it as many time as needed, and don't hesitate to increase the selection to be even faster!</span></p></div><!----> <figure class="__sbk__component-image svelte-nl6xx5"><img src="./_app/immutable/assets/ternary_example.Bc9MjKMd.png" alt="Ternary mode in BandLab, and Alt click shortcut example" class="svelte-nl6xx5"> <!--[!--><!--]--></figure><!----> <p>Now, let's change the pattern a bit. There is no rule here, it is mostly trying things and
+		keeping what works out! However, you can get inspiration by carefully listening to your
+		favourite music and paying attention to the drum pattern. It is difficult at first, but it is a
+		great exercise and a great source of inspiration!</p> <p>Here are my changes:</p> <ul><li>To mark the bar change a bit more, I add a kick at the end of the first and third bar.</li> <li>To enlighten the middle of the pattern, I create a slightly unexpected variation with the
+			hi-hat.</li> <li>I lower the <span class="technical-term"><!---->velocity<!----></span><!----> (intensity and volume of a note) of some closed hi-hats
+			coming before a beat to accentuate those beats. Not too much, we need to hear it! Around 70% is
+			good. To do so, click on the V tool, and drag your mouse up and down on a note to change its velocity.
+			You can also see the value and change it with the line below the velocity tool button, at the left
+			of the panel.</li> <li>I mark the end of the loop with <span class="technical-term"><!---->toms<!----></span><!----> (percussions of varying pitch but similar
+			sound). Note that I remove the snare and hi-hat, because a real drummer (almost) cannot play both
+			with their hands at the same time! I also use two <span class="technical-term"><!---->triplets<!----></span><!---->, a group of
+			notes where each lasts 1/3 beat. I also put a <span class="technical-term"><!---->ride cymbal<!----></span><!----> in place of the
+			hi-hat at the start as a checkpoint for the start of the loop. This whole pattern is extremely
+			common in pop rock music.</li></ul> <p>The changes look and sound as follows:</p> <figure class="__sbk__component-image svelte-nl6xx5"><img src="./_app/immutable/assets/drum_loop_variation.BYktvpg_.png" alt="How all the changes look on the MIDI grid" class="svelte-nl6xx5"> <!--[!--><!--]--></figure><!----> <a class="__sbk__component-file-attachment" href="/_app/immutable/assets/drum_pattern_with_variation.0DLWs424.wav" target="_blank" rel="noopener noreferrer"><span class="icon"><!--[-->🎵<!--]--></span> <span class="name">drum_pattern_with_variation.0DLWs424.wav</span></a><!----> <audio class="__sbk__component-audio" src="./_app/immutable/assets/drum_pattern_with_variation.0DLWs424.wav" controls loop></audio><!----> <h2>Closing words</h2> <p><em>Phew!</em> Yes, I know, this post was long (though it has a lot of images 😉). Discovering a
+		new software, new vocabulary, new techniques all at once... Don't hesitate to ask questions! You
+		made it until the end? Congratulations! You can share your pattern with us by <em><em>SAVING</em> YOUR WORK</em> and exiting the studio (using the hamburger menu at the top left), going to your "Library", choosing
+		your project and clicking on "Share Privately". People will be able to listen, but not edit your
+		work (invite them from the studio, with the button in the top right if you want so). <a href="https://www.bandlab.com/track/85eae12d-088f-ef11-8474-6045bd375453?sharedKey=-N87tCNPVUGdpuDtLmtLHw" target="_blank" rel="noopener noreferrer"><!---->Here is mine!<!----></a><!----></p> <p>Next time, we will talk about chords to set the mood of our song. But for now, we will stop
+		there, and I only have to wish you a good day, afternoon, evening or night!</p> <p>~ Charly</p><!----></article> <!--[--><a class="__sbk__comments-link" href="https://your-first-music-track.weebly.com/blog/2-drums-understanding-rhythm">Comments</a><!--]--></main><!----> <aside class="__sbk__page-aside svelte-e2v6kz"><!--[--><div class="__sbk__aside-block"><h2>Author</h2> <p>I'm Charly - an apprentice IT engineer passionate about music. I started teaching myself music composition out of curiosity many years ago after starting to learn playing the guitar. I created this blog to share the knowledge I accumulated throughout the years and will try to give you the basis for starting this journey yourself!</p></div><!--]--></aside><!----></div></div> <!--[--><style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+	</style><!--]--><!----><!----> <footer class="svelte-1o99p8n">© 2024 Charly Schmidt aka Picorims <a href="mailto:picorims.contact@gmail.com" class="svelte-1o99p8n">picorims.contact@gmail.com</a><br> Unless otherwise specified, all content is licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="svelte-1o99p8n">CC BY-NC-SA 4.0</a> license.</footer><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_fmoqjc = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.pXHfsS9h.js"),
+						import("./_app/immutable/entry/app.C1PVVhYa.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
