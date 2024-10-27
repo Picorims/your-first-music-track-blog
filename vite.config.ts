@@ -6,6 +6,7 @@ export default defineConfig({
 	build: {
 		assetsInlineLimit: 0, // disable asset inlining
 	},
+	assetsInclude: ['**/*.mid'],
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
 	}
