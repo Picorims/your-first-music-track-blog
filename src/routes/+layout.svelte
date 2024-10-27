@@ -1,37 +1,48 @@
+<slot></slot>
+
+<footer>
+	© 2024 Charly Schmidt aka Picorims <a href="mailto:picorims.contact@gmail.com"
+		>picorims.contact@gmail.com</a
+	><br />
+	Unless otherwise specified, all content is licensed under the
+	<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license.
+</footer>
+
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 	:global(.custom-theme) {
-		font-family: "Quattrocento", Garamond, Georgia, 'Times New Roman', Times, serif;
+		font-family: 'Quattrocento', Garamond, Georgia, 'Times New Roman', Times, serif;
 		line-height: 1.5;
 		color: #666666;
 	}
 
 	:global(.custom-theme .__sbk__blog-header) {
-		background-color: rgba(35,35,35,0.95);;
+		background-color: rgba(35, 35, 35, 0.95);
 		padding: 0.9rem 2.3rem;
 	}
 
 	:global(.custom-theme .__sbk__blog-header-title) {
 		margin: 0;
-		font-family: "Dosis", Georgia, 'Times New Roman', Times, serif;
+		font-family: 'Dosis', Georgia, 'Times New Roman', Times, serif;
 		font-size: 1.5rem;
 		font-weight: bold;
-        text-transform: uppercase;
+		text-transform: uppercase;
 		text-decoration: none;
-        color: white;
-        letter-spacing: 1.1;
+		color: white;
+		letter-spacing: 1.1;
 	}
 
 	:global(.custom-theme .__sbk__page-content) {
-        padding: 2rem;
-        padding-top: 3rem;
-        gap: 2rem;
-        max-width: 1010px !important;
-    }
-
+		padding: 2rem;
+		padding-top: 3rem;
+		gap: 2rem;
+		max-width: 1010px !important;
+	}
 
 	:global(.custom-theme .__sbk__all-posts-link, .custom-theme .__sbk__comments-link) {
 		display: inline-block;
@@ -51,20 +62,20 @@
 		color: #333;
 	}
 
-    :global(.custom-theme h1, .custom-theme h2) {
-        font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
-        font-size: 2rem;
-        color: #333;
-        font-weight: 400;
-        margin-top: 0;
-        margin-bottom: 0.5em;
-    }
+	:global(.custom-theme h1, .custom-theme h2) {
+		font-family: 'Lora', Georgia, 'Times New Roman', Times, serif;
+		font-size: 2rem;
+		color: #333;
+		font-weight: 400;
+		margin-top: 0;
+		margin-bottom: 0.5em;
+	}
 
 	:global(.custom-theme .__sbk__post-date) {
 		font-weight: 300;
-        margin: 0 8px 0 0;
-        padding: 0 0 4px 0;
-        font-size: 0.8rem;
+		margin: 0 8px 0 0;
+		padding: 0 0 4px 0;
+		font-size: 0.8rem;
 	}
 
 	:global(.custom-theme .__sbk__post-header-separator) {
@@ -74,7 +85,6 @@
 	}
 
 	:global(.custom-theme .__sbk__post-content) {
-		font-size: 1.2rem;
 		line-height: 1.5;
 	}
 
@@ -83,11 +93,25 @@
 		font-weight: bold;
 	}
 
+	:global(.custom-theme .__sbk__post-content p) {
+		text-align: justify;
+	}
+
+	:global(.custom-theme .__sbk__post-content a) {
+		text-align: justify;
+		color: #2372c2;
+	}
+
 	:global(.custom-theme .__sbk__post-content .__sbk__component-image) {
 		margin: 1rem 0;
-		font-size: 1rem;
+		font-size: 0.9rem;
 		max-width: 640px;
+		font-weight: 300;
+		font-family: 'Open Sans', Georgia, 'Times New Roman', Times, serif;
 		margin: auto;
+	}
+	:global(.custom-theme .__sbk__post-content .__sbk__component-image figcaption) {
+		border-left: 1px solid #ccc;
 	}
 
 	:global(.custom-theme .__sbk__post-content .__sbk__component-audio) {
@@ -115,9 +139,34 @@
 		background-color: #f0f0f0;
 	}
 
+	:global(.custom-theme .__sbk__post-content .__sbk__component-quote) {
+		font-style: italic;
+		font-size: 1.5rem;
+		font-family: 'Raleway', Georgia, 'Times New Roman', Times, serif;
+		margin: 1rem 0;
+	}
+
 	:global(.custom-theme .__sbk__page-aside) {
 		padding: 0;
 	}
-</style>
 
-<slot></slot>
+	/* ================== */
+
+	:global(.technical-term) {
+		text-decoration: underline dashed #666;
+		color: #9b46ac;
+		font-weight: bold;
+	}
+
+	footer {
+		background-color: #333;
+		color: white;
+		text-align: center;
+		padding: 1rem;
+		font-size: 0.9rem;
+	}
+	footer a {
+		color: white;
+		text-decoration: underline;
+	}
+</style>
