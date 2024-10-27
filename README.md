@@ -1,5 +1,7 @@
 # Your First Music Track - blog
 
+https://picorims.github.io/your-first-music-track-blog/
+
 ## License
 
 ```
