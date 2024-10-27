@@ -38,7 +38,7 @@
 	},
 	"dependencies": {
 		"@sveltejs/adapter-static": "^3.0.6",
-		"svelte-blogging-kit": "github:picorims/svelte-blogging-kit#v0.0.2",
+		"svelte-blogging-kit": "github:picorims/svelte-blogging-kit#v0.1.0",
 		"your-first-music-track-blog": "file:"
 	}
 }
