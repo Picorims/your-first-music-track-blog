@@ -5,6 +5,7 @@
 
 	:global(.custom-theme) {
 		font-family: "Quattrocento", Garamond, Georgia, 'Times New Roman', Times, serif;
+		line-height: 1.5;
 		color: #666666;
 	}
 
@@ -19,6 +20,7 @@
 		font-size: 1.5rem;
 		font-weight: bold;
         text-transform: uppercase;
+		text-decoration: none;
         color: white;
         letter-spacing: 1.1;
 	}
@@ -32,17 +34,21 @@
 
 
 	:global(.custom-theme .__sbk__all-posts-link, .custom-theme .__sbk__comments-link) {
+		display: inline-block;
 		font-size: 1.2rem;
 		text-decoration: none;
-		color: #333;
+		color: white;
+		background-color: #333;
 		font-weight: bold;
 		border: 1px solid #333;
 		padding: 0.5rem 1rem;
+		margin: 1rem 0;
 		border-radius: 4px;
-		transition: 0.1s, background-color;
+		transition: 0.2s;
 	}
 	:global(.custom-theme .__sbk__all-posts-link:hover, .custom-theme .__sbk__comments-link:hover) {
-		background-color: #f0f0f0;
+		background-color: transparent;
+		color: #333;
 	}
 
     :global(.custom-theme h1, .custom-theme h2) {
