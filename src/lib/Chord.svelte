@@ -1,7 +1,5 @@
 <script lang="ts">
-	import type { Snippet } from 'svelte';
-
-	/*
+    /*
     Copyright (c) 2024 Charly Schmidt aka Picorims<picorims.contact@gmail.com>
     
     This Source Code Form is subject to the terms of the Mozilla Public
@@ -9,18 +7,17 @@
     file, You can obtain one at https://mozilla.org/MPL/2.0/.
     */
 
-	interface Props {
-		href: string;
-		children?: Snippet;
-	}
-
-	let { href, children }: Props = $props();
+    export let name: string;
 </script>
 
-<a {href} target="_blank" rel="noopener noreferrer">
-	{#if children}
-		{@render children()}
-	{:else}
-		{href}
-	{/if}
-</a>
+<span>{name}</span>
+
+<style>
+    span {
+        font-weight: bold;
+        display: inline-block;
+        background-color: #f0f0f0;
+        border-radius: 4px;
+        padding: 0 0.5em;
+    }
+</style>
