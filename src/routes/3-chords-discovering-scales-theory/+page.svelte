@@ -24,13 +24,14 @@
 	import chordProgressionMusicSheet from './chord_progression_music_sheet.png';
 	import chordProgressionAudio from './chord_progression.wav';
 	import { base } from '$app/paths';
+	import Chord from '$lib/Chord.svelte';
 </script>
 
 <BlogPage
 	{config}
 	postTitle="3 - Chords: Discovering Scales Theory"
 	{postContent}
-	date="??/??/????"
+	date="11/05/2024"
 	categories={['Music Theory']}
 	urlComments="https://your-first-music-track.weebly.com/blog/3-chords-discovering-scales-theory"
 />
@@ -71,7 +72,7 @@
 	<Image
 		src={base + cSaleMidi}
 		alt="C Major scale on a MIDI grid"
-		caption="C Major scale on a MIDI grid. Yes, that is all the white keys on a piano! There is one tone from C to D, but one semitone from E to F."
+		caption="C Major scale on a MIDI grid. Yes, that is all the white keys on a piano! There is one tone from C to D, but one semitone from E to F. There is 1 octave from C4 to C5, the number indicate the octave."
 	/>
 
 	<Audio src={base + cScaleAudio} />
@@ -105,7 +106,7 @@
 	<Image
 		src={base + chordsExplanation}
 		alt="Chords explanation"
-		caption="Chords explanation. For B, in orange, the first note is B, then we loop back to the start to pick D as the third note."
+		caption="Chords explanation. The C chord is made of C (#1, from where we count), E (#3) and G (#5) notes, it is a triad. For B, in orange, the first note is B, then we loop back to the start to pick D as the third note, then F."
 	/>
 	<Image
 		src={base + chordsExplanationMidi}
@@ -122,42 +123,51 @@
 	</p>
 
 	<p>
-		The letter of the chord is defined by its fundamental, hence the first chord is a C, because the
-		fundamental is a C. You might have noticed that there are weird abbreviations after the chord
-		letters written on the music sheet (above the patch of notes played together). This defines the
-		pattern following the fundamental. Here are three examples covering all the chords above:
+		The letter of the chord is defined by its fundamental, hence the first chord is a <Chord
+			name="C"
+		/>, because the fundamental is a C. You might have noticed that there are weird abbreviations
+		after the chord letters written on the music sheet (above the patch of notes played together).
+		This defines the pattern following the fundamental. Here are three examples covering all the
+		chords above:
 	</p>
 	<ul>
 		<li>
-			The first chord, highlighted in red, is a C <TechTerm>major</TechTerm>. It can be recognized
-			by the number of semitones between notes. For a major chord, we do not write anything after
-			the name (at times, it is written with the suffix "maj"). It sounds happy! Can you spot the
-			other major chords?
+			The first chord, highlighted in red, is a <Chord name="C" />, or C <TechTerm>major</TechTerm>.
+			It can be recognized by the number of semitones between notes. For a major chord, we do not
+			write anything after the name (at times, it is written with the suffix "maj" or a capital
+			"M"). It sounds
+			<strong>happy</strong>! Can you spot the other major chords?
 		</li>
 		<li>
-			The second chord, highlighted in blue, is a Dm, or D <TechTerm>minor</TechTerm>. The only
-			difference with the major chord is that the middle note is moved down by a semitone. This one
-			will sound sad. Can you spot the other minor chords?
+			The second chord, highlighted in blue, is a <Chord name="Dm" />, or D <TechTerm
+				>minor</TechTerm
+			>. The only difference with the major chord is that the middle note (the <TechTerm
+				>third</TechTerm
+			>) is moved down by a semitone. This one will sound <strong>sad</strong>. Can you spot the
+			other minor chords?
 		</li>
 		<li>
-			The second to last chord, highlighted in green, is a Bdim, or B <TechTerm>diminished</TechTerm
-			>. It sounds a bit weird and scary, because frequencies do not overlap well. That's a great
-			way to add tension to the music! That's the only one in this example.
+			The second to last chord, highlighted in green, is a <Chord name="Bdim" />, or B <TechTerm
+				>diminished</TechTerm
+			>. It sounds a bit <strong>weird</strong> and <strong>scary</strong>, because frequencies do
+			not overlap well. That's a great way to add tension to the music! That's the only one in this
+			example.
 		</li>
 	</ul>
 
 	<FramedTextBlock
 		title="Note"
-		content="I will not go into details about the other chords to keep it simple. But you can find some online resources at the bottom of this post to dig further into chords theory. I will also link at how we formally name notes within a chord if you are curious."
+		content="I will not go into details about the other chords to keep it simple. But you can find some online resources at the bottom of this post to dig further into chords theory. I will also link at how we formally name notes within a chord and roman numbers chord notation if you are curious."
 		variant="note"
 	/>
 
 	<p>
-		Notice that I can also change the order of notes! That's handy if they are too far apart in
+		Notice that we can also change the order of notes! That's handy if they are too far apart in
 		pitch. This is called a <TechTerm>transposition</TechTerm>. But then, how to figure out the
 		name? Well, one combination can have multiple names. If we want to ensure we talk about the same
-		chord, we can indicate it like this: C/E. This means that the fundamental is a C (the chord is
-		thus a C major), but the third note is the one with the lowest pitch.
+		chord than before transposition, we can indicate it like this: <Chord name="C/E" />. This means
+		that the fundamental is a C (the chord is thus a C major), but the third note is the one with
+		the lowest pitch. It gives: E, G, C (instead of C, E, G).
 	</p>
 
 	<h2>From chords to chord progressions</h2>
@@ -190,15 +200,19 @@
 		alt="Chord progression music sheet"
 		caption="The chord progression music sheet."
 	/>
-	<Audio src={base + chordProgressionAudio} />
+	<Audio src={base + chordProgressionAudio} loop />
 
 	<p>
-		I started with a C major chord to set a happy mood, during 1 bar as a basis. Then, I play an E
-		minor, as it shares two notes with C major. It sounds surprisingly happy for a sad chord, I will
-		explain that in the next chapter! I want the change to be a bit faster to express a pattern, so
-		it only lasts 2 beats, followed by a G major chord lasting 2 beats too. Both Em and G share a G
-		note and a B note, they are just played at a different octave. I could have chosen to transpose
-		G, but I like the melody created by the highest note in pitch.
+		I started with a C major (<Chord name="C" />) chord to set a happy mood, during 1 bar as a
+		basis. Then, I play an E minor (<Chord name="Em" />), as it shares two notes with C major (<Chord
+			name="C"
+		/>). It sounds surprisingly happy for a sad chord, I will explain that in the next chapter! I
+		want the change to be a bit faster to give some variation and movement, so it only lasts 2
+		beats, followed by a G major chord (<Chord name="G" />) lasting 2 beats too. Both <Chord
+			name="Em"
+		/> and <Chord name="G" /> share a G note and a B note, they are just played at a different octave.
+		I could have chosen to <TechTerm>transpose</TechTerm> the <Chord name="G" /> chord, but I like the
+		melody created by the highest note in pitch.
 	</p>
 	<FramedTextBlock
 		title="Tip"
@@ -206,10 +220,13 @@
 		variant="tip"
 	/>
 	<p>
-		After that, I create a small surprise by bringing in sadness: A minor. The change is sharp as no
-		note is shared between G and Am. I give it 6 bars to let the sadness express himself, but
-		quickly bring back joy with another G. It serves as a smooth transition back to the start of the
-		chord progression, by using G as the common note between the chords G and C.
+		After that, I create a small surprise by bringing in sadness with an A minor (<Chord
+			name="Am"
+		/>). The change is sharp as no note is shared between <Chord name="G" /> and <Chord
+			name="Am"
+		/>. I give it 6 bars to let the sadness express himself, but quickly bring back joy with another
+		<Chord name="G" />. It serves as a smooth transition back to the start of the chord progression,
+		by using G as the common note between the chords <Chord name="G" /> and <Chord name="C" />.
 	</p>
 
 	<FramedTextBlock
@@ -231,25 +248,34 @@
 		<ExternalLink href="https://www.hooktheory.com/theorytab/common-chord-progressions"
 			>one of the popular chord progressions here</ExternalLink
 		>. Feel free to combine them one after the other, and to not stick to each chord having the same
-		duration!
+		duration! If you struggle to find their notes, try <ExternalLink
+			href="https://www.imusic-school.com/en/tools/piano-chords/">this tool</ExternalLink
+		> and pick a chord name.
 	</p>
 
 	<p>
 		I know I am going fast and skipping things. Remember, it is just an introduction to the world of
-		music composition, that's OK to be lost! Next time, we will see how to improve the example chord
-		progression to make it more spicy. But for now, don't hesitate to ask questions and share your
-		chord progressions in the comments!
+		music composition, that's OK to be lost, or not able to create your own work!
+	</p>
+	<p>
+		Next time, we will see how to improve the example chord progression to make it more spicy. But
+		for now, don't hesitate to ask questions and share your chord progressions in the comments!
 	</p>
 
 	<p>Have a nice day, afternoon, evening, or night!</p>
 
 	<p>~ Charly</p>
 
-	<p>PS: It is shorter than the last post, I counted ;). The next one will be even shorter, I swear!</p>
+	<p>
+		PS: It is shorter than the last post, I counted ;). The next one will be even shorter, I swear!
+	</p>
 
 	<h2>Resources (for help or to dig deeper)</h2>
 
 	<ul>
+		<li>
+			About roman numerals: <ExternalLink href="https://viva.pressbooks.pub/openmusictheory/chapter/roman-numerals/"></ExternalLink>
+		</li>
 		<li>
 			Popular chord progressions: <ExternalLink
 				href="https://www.hooktheory.com/theorytab/common-chord-progressions"
@@ -265,7 +291,11 @@
 			></ExternalLink>
 		</li>
 		<li>
-			More chord types available at the top left of this cheat sheet (it also illustrate a few things we learnt in the last post regarding rhythm!): <ExternalLink
+			Chord name to its corresponding notes: <ExternalLink href="https://www.imusic-school.com/en/tools/piano-chords/"></ExternalLink>
+		</li>
+		<li>
+			More chord types available at the top left of this cheat sheet (it also illustrate a few
+			things we learnt in the last post regarding rhythm!): <ExternalLink
 				href="https://gravitascreate.com/music-theory-cheat-sheet/"
 			></ExternalLink>
 		</li>
@@ -276,9 +306,4 @@
 			></ExternalLink>
 		</li>
 	</ul>
-	<!--TODO-->
-
-	<!-- chord palette somewhere online -->
-	<!--  top left chord examples -->
-	<!-- https://theoryandsound.com/intervals-basic-scales/ -->
 {/snippet}
