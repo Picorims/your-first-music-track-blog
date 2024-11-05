@@ -1,1 +1,0 @@
-import{a as e,t as a}from"../chunks/disclose-version.BLDzyfDt.js";var p=a('<p class="svelte-12yzpij"><a href="https://your-first-music-track.weebly.com/blog">Go to the list of blog posts (weebly)</a></p>');function r(t){var o=p();e(t,o)}export{r as component};
