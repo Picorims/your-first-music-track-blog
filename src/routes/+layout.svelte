@@ -126,6 +126,11 @@
 		padding-left: 0.5rem;
 	}
 
+	:global(.custom-theme .__sbk__post-content .__sbk__component-video) {
+		width: 100%;
+		max-width: 640px;
+	}
+
 	:global(.custom-theme .__sbk__post-content .__sbk__component-audio) {
 		width: 100%;
 		max-width: 640px;
