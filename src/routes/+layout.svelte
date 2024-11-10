@@ -111,6 +111,7 @@
 		list-style-type: disc;
 		padding-left: 0.75rem;
 		margin: 0.5rem 0;
+		text-align: justify;
 	}
 
 	:global(.custom-theme .__sbk__post-content .__sbk__component-image) {
