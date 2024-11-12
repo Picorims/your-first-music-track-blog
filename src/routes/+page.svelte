@@ -16,8 +16,9 @@
     <p>Development mode</p>
     <ul>
         <li><a href="./welcome-aboard">post 1</a></li>
-        <li><a href="./2-creating-your-first-music-track">post 2</a></li>
+        <li><a href="./2-drums-understanding-rhythm">post 2</a></li>
         <li><a href="./3-chords-discovering-scales-theory">post 3</a></li>
+        <li><a href="./4-chords-making-a-chord-progression-more-interesting">post 4</a></li>
     </ul>
 {/if}
 

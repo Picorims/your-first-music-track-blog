@@ -111,6 +111,7 @@
 		list-style-type: disc;
 		padding-left: 0.75rem;
 		margin: 0.5rem 0;
+		text-align: justify;
 	}
 
 	:global(.custom-theme .__sbk__post-content .__sbk__component-image) {
@@ -124,6 +125,11 @@
 	:global(.custom-theme .__sbk__post-content .__sbk__component-image figcaption) {
 		border-left: 1px solid #ccc;
 		padding-left: 0.5rem;
+	}
+
+	:global(.custom-theme .__sbk__post-content .__sbk__component-video) {
+		width: 100%;
+		max-width: 640px;
 	}
 
 	:global(.custom-theme .__sbk__post-content .__sbk__component-audio) {
