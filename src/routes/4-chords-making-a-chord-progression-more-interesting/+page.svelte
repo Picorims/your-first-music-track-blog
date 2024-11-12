@@ -28,9 +28,9 @@
 
 <BlogPage
 	{config}
-	postTitle="4 - Chords: Making a chord progression more interesting"
+	postTitle="4 - Chords: making a chord progression more interesting"
 	{postContent}
-	date="11/??/2024"
+	date="11/12/2024"
 	categories={['Music Theory']}
 	urlComments="https://your-first-music-track.weebly.com/blog/4-chords-making-a-chord-progression-more-interesting"
 />
@@ -66,14 +66,14 @@
 	<Audio src={base + chordProgressionAudioC3} />
 
 	<p>
-		It sounds good, and actually some songs keep things simple like that. However, it is perfectly
+		It sounds good, and actually some songs keep things simple like that. However, it is totally
 		possible and easy to make it slightly more sophisticated, without compromising on the simplicity
 		of it.
 	</p>
 
 	<h2>Chords variations, or how to season your chords</h2>
 
-	<p>With a bit of seasoning, this is what I personally came up with:</p>
+	<p>With a bit of seasoning, this is what I personally came up with (I added the drum loop from chapter 2 in the audio):</p>
 
 	<Audio src={base + chordsAudio} />
 	<Video src={base + chordsVideo} />
@@ -103,7 +103,7 @@
 		basic anticipation breaks the monotony a bit. I did it quite a lot here, to it sounds a bit like
 		I shifted the whole pattern and only created the effect at the start. But you can do it much
 		more sparingly, it will still sound good. I also shortened the two <Chord name="G" /> chords, they
-		are now more transition chords, which also conveys some kind of nice melody.
+		are now more like transition chords, which also conveys some kind of nice melody.
 	</p>
 
 	<p>
@@ -119,19 +119,19 @@
 
 	<ul>
 		<li>
-			<strong>Try random things:</strong> it might sound stupid, but sometimes it works. I discovered
+			<strong>Trying random things:</strong> it might sound stupid, but sometimes it works. I discovered
 			nice patterns that way! I will admit though that it is harder to find something that sounds good
-			that way when you begin. However, I did use this from the very start, and it still helped me a
+			that way when you begin. Still, I did use this technique from the very start, and it did help me a
 			lot!
 		</li>
 		<li>
-			<strong>Search how to write the genre I target:</strong> Sometimes genres have chords typically
+			<strong>Doing some research on the genre I target:</strong> Sometimes genres have chords typically
 			used with them, or signature patterns that makes you immediately say: that's this genre. It can
 			give you a hint at how to tweak your chords, or even give you a recipe.
 		</li>
 		<li>
 			<strong>Keep in mind a short list of chords you love, or know what they do:</strong> basically
-			make yourself a cheat-sheet. Here are some examples (I will use <Chord name="C" /> as a basis for
+			make yourself a cheat-sheet (in your mind or on paper!). Here are some examples (I will use <Chord name="C" /> as a basis for
 			the examples):
 			<ul>
 				<li>
@@ -166,12 +166,12 @@
 		</li>
 	</ul>
 
-	<h3>Variation across loops</h3>
+	<h3>Variation across loops (OPTIONAL)</h3>
 
 	<p>
 		Another good thing to do sometimes is just to have variations of the same chord progression to
 		make something bigger and less repetitive. It isn't as efficient as a 8 bars chord progression
-		from the ground up, but it still make it sound less repetitive.
+		written from the ground up, but it still makes it sound less repetitive.
 	</p>
 
 	<Image
