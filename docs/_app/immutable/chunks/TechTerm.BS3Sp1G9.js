@@ -1,1 +1,0 @@
-import{a as p,t}from"./disclose-version.DUbAOi_G.js";import{p as o,c as n,r as m,a as c}from"./runtime.BU0LxtOx.js";import{s as i}from"./Image.ERpiggse.js";var h=t('<span class="technical-term"><!></span>');function u(s,r){o(r,!0);var a=h(),e=n(a);i(e,()=>r.children),m(a),p(s,a),c()}export{u as T};
