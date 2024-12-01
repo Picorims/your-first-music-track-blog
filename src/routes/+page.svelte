@@ -19,6 +19,7 @@
         <li><a href="./2-drums-understanding-rhythm">post 2</a></li>
         <li><a href="./3-chords-discovering-scales-theory">post 3</a></li>
         <li><a href="./4-chords-making-a-chord-progression-more-interesting">post 4</a></li>
+        <li><a href="./5-melody-and-bass-making-the-song-memorable">post 5</a></li>
     </ul>
 {/if}
 
