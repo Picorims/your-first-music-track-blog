@@ -1,1 +1,0 @@
-import{a as o,t as p}from"./disclose-version.DUbAOi_G.js";import{c as m,r as n,t as f}from"./runtime.BU0LxtOx.js";import{s as i}from"./store.elH8iAhq.js";import{p as l}from"./props.BLDyvx7H.js";var c=p('<span class="svelte-1noky1w"> </span>');function u(a,e){let r=l(e,"name",8);var t=c(),s=m(t,!0);n(t),f(()=>i(s,r())),o(a,t)}export{u as C};

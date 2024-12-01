@@ -107,11 +107,16 @@
 		text-decoration: underline;
 	}
 
-	:global(.custom-theme .__sbk__post-content ul li) {
-		list-style-type: disc;
+	:global(.custom-theme .__sbk__post-content ul li, .custom-theme .__sbk__post-content ol li) {
 		padding-left: 0.75rem;
 		margin: 0.5rem 0;
 		text-align: justify;
+	}
+	:global(.custom-theme .__sbk__post-content ul li) {
+		list-style-type: disc;
+	}
+	:global(.custom-theme .__sbk__post-content ol li) {
+		list-style-type: decimal;
 	}
 
 	:global(.custom-theme .__sbk__post-content .__sbk__component-image) {
@@ -173,7 +178,9 @@
 	:global(.custom-theme .__sbk__post-content .__sbk__component-framed-text-block p) {
 		margin: 0;
 	}
-	:global(.custom-theme .__sbk__post-content .__sbk__component-framed-text-block[data-variant="tip"]) {
+	:global(
+			.custom-theme .__sbk__post-content .__sbk__component-framed-text-block[data-variant='tip']
+		) {
 		background-color: #b2dcf0;
 		color: #041d35;
 		border-color: #169cda;
