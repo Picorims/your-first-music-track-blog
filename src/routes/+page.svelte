@@ -20,6 +20,7 @@
         <li><a href="./3-chords-discovering-scales-theory">post 3</a></li>
         <li><a href="./4-chords-making-a-chord-progression-more-interesting">post 4</a></li>
         <li><a href="./5-melody-and-bass-making-the-song-memorable">post 5</a></li>
+        <li><a href="./6-arrangement-from-a-loop-to-a-song">post 6</a></li>
     </ul>
 {/if}
 
