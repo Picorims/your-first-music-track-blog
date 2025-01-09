@@ -69,11 +69,11 @@
 	</p>
 	<label>
 		Without delay:
-		<Audio src={base + delayDisabled} />
+		<Audio src={delayDisabled} />
 	</label>
 	<label>
 		With delay:
-		<Audio src={base + delayEnabled} />
+		<Audio src={delayEnabled} />
 	</label>
 
 	<h3>Reverberation</h3>
@@ -85,11 +85,11 @@
 	</p>
 	<label>
 		Without reverb:
-		<Audio src={base + reverbDisabled} />
+		<Audio src={reverbDisabled} />
 	</label>
 	<label>
 		With reverb:
-		<Audio src={base + reverbEnabled} />
+		<Audio src={reverbEnabled} />
 	</label>
 
 	<h3>Equalizer</h3>
@@ -101,15 +101,15 @@
 	<p>Here is an example of a muted piano achieved using an EQ:</p>
 	<label>
 		Without EQ:
-		<Audio src={base + eqDisabled} />
+		<Audio src={eqDisabled} />
 	</label>
 	<label>
 		With EQ:
-		<Audio src={base + eqEnabled} />
+		<Audio src={eqEnabled} />
 	</label>
 
 	<Image
-		src={base + graphicEqPiano}
+		src={graphicEqPiano}
 		alt="The equalizer applied to the piano (dB level modification based on the frequency)."
 		caption="The equalizer applied to the piano (dB level modification based on the frequency)."
 	/>
@@ -128,11 +128,11 @@
 	</p>
 	<label>
 		Without chorus:
-		<Audio src={base + chorusDisabled} />
+		<Audio src={chorusDisabled} />
 	</label>
 	<label>
 		With chorus:
-		<Audio src={base + chorusEnabled} />
+		<Audio src={chorusEnabled} />
 	</label>
 
 	<h3>Side chain - pumping effect</h3>
@@ -145,11 +145,11 @@
 	</p>
 	<label>
 		Without side chain:
-		<Audio src={base + sidechainDisabled} loop />
+		<Audio src={sidechainDisabled} loop />
 	</label>
 	<label>
 		With side chain:
-		<Audio src={base + sidechainEnabled} loop />
+		<Audio src={sidechainEnabled} loop />
 	</label>
 
 	<h3>Distortion and other damaging effects</h3>
@@ -161,11 +161,11 @@
 	</p>
 	<label>
 		Without overdrive:
-		<Audio src={base + overdriveDisabled} />
+		<Audio src={overdriveDisabled} />
 	</label>
 	<label>
 		With overdrive:
-		<Audio src={base + overdriveEnabled} />
+		<Audio src={overdriveEnabled} />
 	</label>
 
 	<h3>Compressor and limiter</h3>
@@ -187,11 +187,11 @@
 	</p>
 	<label>
 		Without compression:
-		<Audio src={base + compressionDisabled} loop />
+		<Audio src={compressionDisabled} loop />
 	</label>
 	<label>
 		With compression:
-		<Audio src={base + compressionEnabled} loop />
+		<Audio src={compressionEnabled} loop />
 	</label>
 
 	<h2>Closing words</h2>
