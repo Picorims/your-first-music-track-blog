@@ -34,7 +34,7 @@
 	{config}
 	postTitle="7 - Effects: Giving Depth to Instruments"
 	{postContent}
-	date="01/08/2025"
+	date="01/09/2025"
 	categories={['Mixing']}
 	urlComments="https://your-first-music-track.weebly.com/blog/7-effects-giving-depth-to-instruments"
 />
