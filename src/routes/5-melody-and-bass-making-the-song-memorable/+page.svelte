@@ -80,17 +80,17 @@
 		Now it is your turn! And as always don't be too harsh on yourself! Here is mine for example:
 	</p>
 
-	<Audio src={base + melody} loop />
-	<Image src={base + melodyAnalysis} alt="Melody analysis." caption="Melody analysis." />
+	<Audio src={melody} loop />
+	<Image src={melodyAnalysis} alt="Melody analysis." caption="Melody analysis." />
 
 	<p>
 		And here is the melody together with the rest of the song (The bass line discussed below is
 		included, and the chord at the end of the 7th bar was slightly changed):
 	</p>
-	<Audio src={base + fullSong} loop />
+	<Audio src={fullSong} loop />
 
 	<Image
-		src={base + fullSongPic}
+		src={fullSongPic}
 		alt="Full song MIDI tracks."
 		caption="Full song MIDI tracks. The bass is made stronger by combining a piano and a bass."
 	/>
@@ -118,9 +118,9 @@
 		</li>
 	</ol>
 
-	<Audio src={base + bass} loop />
+	<Audio src={bass} loop />
 	<Image
-		src={base + bassLineAnnotated}
+		src={bassLineAnnotated}
 		alt="Bass line annotated."
 		caption="Bass line annotated. The red lines represent notes highlighting the chords (the last G anticipates the following G6 chord)."
 	/>

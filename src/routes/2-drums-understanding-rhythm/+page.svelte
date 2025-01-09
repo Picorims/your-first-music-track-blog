@@ -114,25 +114,25 @@
 	</p>
 
 	<Image
-		src={base + musicSheetDurations1}
+		src={musicSheetDurations1}
 		alt="Music sheet with note durations: whole = 4 beats, dotted-half = 3 beats, half = 2 beats, quarter = 1 beat, eighth = 1/2 beat, sixteenth = 1/4 beat"
 		caption="There are 5 bars in the example above."
 	/>
 
 	<Image
-		src={base + musicSheetDurations2}
+		src={musicSheetDurations2}
 		alt="MIDI grid with note durations: dotted-quarter: 1 + 1/2 beats"
 		caption="A dot adds half of the duration of the symbol on which we put it. That is why a dotted-half is 3 beats (2 + (2/2) = 2+1 = 3)."
 	/>
 
 	<Image
-		src={base + noteDurationsMidi}
+		src={noteDurationsMidi}
 		alt="MIDI grid representation of the music sheet presented above"
 		caption="The equivalent melody in a MIDI grid: on the horizontal axis, in bars (written above as [bar].[beat]), we represent the time. On the vertical axis, we represent the pitch (the note we want to play). A rectangle is thus one note with a given duration."
 	/>
 
 	<FileAttachment src={audioDurationExampleMp3} />
-	<Audio src={base + audioDurationExampleMp3} />
+	<Audio src={audioDurationExampleMp3} />
 
 	<p>
 		<em>Argh!</em> What are all these symbols?! Do not worry, you do not have to remember all of it.
@@ -158,7 +158,7 @@
 	</p>
 
 	<Image
-		src={base + bpmBandlab}
+		src={bpmBandlab}
 		alt="BandLab interface with the metronome and bpm options"
 		caption="You can also change the time signature here if you are familiar with this concept."
 	/>
@@ -180,7 +180,7 @@
 		bpm at the top to 90 as I want it to be calm.
 	</p>
 
-	<Image src={base + stepsNewDrumKit} alt="Steps to create a new drum kit in BandLab visualized" />
+	<Image src={stepsNewDrumKit} alt="Steps to create a new drum kit in BandLab visualized" />
 
 	<p>
 		The most basic drum kit pattern uses three different percussions (<ExternalLink
@@ -213,7 +213,7 @@
 	</p>
 
 	<Image
-		src={base + basicDrumLoop}
+		src={basicDrumLoop}
 		alt="Basic drum loop in BandLab (MIDI grid and steps)"
 		caption="Here, I chose to use the stick on a snare instead of the snare itself, just because I want to use its sound. But you can choose whatever sound you prefer!"
 	/>
@@ -221,7 +221,7 @@
 	<p>The result should sound similar to this:</p>
 
 	<FileAttachment src={basicDrumPatternAudio} />
-	<Audio src={base + basicDrumPatternAudio} loop />
+	<Audio src={basicDrumPatternAudio} loop />
 
 	<h2>Variation: spicing things up (OPTIONAL)</h2>
 
@@ -251,7 +251,7 @@
 	/>
 
 	<Image
-		src={base + ternaryExample}
+		src={ternaryExample}
 		alt="Ternary mode in BandLab, and Alt click shortcut example"
 	/>
 
@@ -288,10 +288,10 @@
 
 	<p>The changes look and sound as follows:</p>
 
-	<Image src={base + drumLoopVariation} alt="How all the changes look on the MIDI grid" />
+	<Image src={drumLoopVariation} alt="How all the changes look on the MIDI grid" />
 
 	<FileAttachment src={drumPatternVariationAudio} />
-	<Audio src={base + drumPatternVariationAudio} loop />
+	<Audio src={drumPatternVariationAudio} loop />
 
 	<h2>Closing words</h2>
 

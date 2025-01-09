@@ -116,7 +116,7 @@
 		variant="note"
 	/>
 
-	<Audio src={base + songNoMixingNoMastering} />
+	<Audio src={songNoMixingNoMastering} />
 	<p>
 		License of the track: <ExternalLink href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</ExternalLink>.
 	</p>
