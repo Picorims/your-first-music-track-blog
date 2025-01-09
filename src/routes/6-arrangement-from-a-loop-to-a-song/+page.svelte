@@ -8,9 +8,7 @@
     */
 
 	import { config } from '$lib/config';
-	import TechTerm from '$lib/TechTerm.svelte';
-	import Chord from '$lib/Chord.svelte';
-	import { BlogPage, FramedTextBlock, Image, Audio } from 'svelte-blogging-kit';
+	import { BlogPage, FramedTextBlock, Audio } from 'svelte-blogging-kit';
 	import { base } from '$app/paths';
 
 	import songNoMixingNoMastering from "./full_song_no_mixing_no_mastering.mp3";
