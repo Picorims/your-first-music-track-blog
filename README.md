@@ -1,5 +1,7 @@
 # Your First Music Track - blog
 
+As part of Polytech Paris-Saclay fifth year's english class, I wrote the following blog about music composition. Only the blog posts are hosted here. Link to the full blog coming soon.
+
 https://picorims.github.io/your-first-music-track-blog/
 
 ## License
