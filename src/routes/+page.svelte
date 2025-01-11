@@ -22,6 +22,7 @@
         <li><a href="./5-melody-and-bass-making-the-song-memorable">post 5</a></li>
         <li><a href="./6-arrangement-from-a-loop-to-a-song">post 6</a></li>
         <li><a href="./7-effects-giving-depth-to-instruments">post 7</a></li>
+        <li><a href="./8-effects-in-practice">post 8</a></li>
     </ul>
 {/if}
 
