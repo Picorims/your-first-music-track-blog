@@ -28,6 +28,12 @@
 <!--american date mm-dd-yyyy-->
 
 {#snippet postContent()}
+	<FramedTextBlock
+		title="Note"
+		content="Stems and songs provided in the following post are licensed under CC BY-NC-ND 4.0. For more information, see: https://creativecommons.org/licenses/by-nc-nd/4.0/"
+		variant="note"
+	/>
+
 	<p>
 		So far we have got a full song with effects applied to each track. But we didn't talk yet about
 		the less creative part of mixing, which purpose is to make the overall song sound better. Today,
