@@ -35,6 +35,11 @@
 	/>
 
 	<p>
+		Update (01/13/2025): I added a bit of context to the <TechTerm>master</TechTerm> keyword and gave
+		more info about paying attention to physical devices.
+	</p>
+
+	<p>
 		So far we have got a full song with effects applied to each track. But we didn't talk yet about
 		the less creative part of mixing, which purpose is to make the overall song sound better. Today,
 		we are going to see how we can make our mix breath more my seeing how to handle volume, panning
@@ -52,14 +57,19 @@
 
 	<p>
 		Mixing can be conceived in a 3D space to help you take your decisions. The vertical axis is the
-		pitch, the horizontal one is <TechTerm>panning</TechTerm> and delay between left and right ears,
-		and the depth (how far something is perceived) is the volume and reverb.
+		<TechTerm>pitch</TechTerm>, the horizontal one is <TechTerm>panning</TechTerm> and delay between
+		left and right ears, and the depth (how far something is perceived) is the <TechTerm
+			>volume</TechTerm
+		> and <TechTerm>reverb</TechTerm>.
 	</p>
 
 	<p>
 		Managing <TechTerm>volume</TechTerm> is important to give each track its own space. You don't want
-		the overall volume to be too high to not saturate the master. But you don't want it to be too low
-		either to not make it hard to hear on devices without pushing the device volume to max!
+		the overall volume to be too high to not <TechTerm>saturate</TechTerm> the <TechTerm
+			>master</TechTerm
+		>(the <TechTerm>rack</TechTerm> that receive the input of all our tracks, and is the song output).
+		But you don't want it to be too low either to not make it hard to hear on devices without pushing
+		the device volume to max!
 	</p>
 
 	<FramedTextBlock
@@ -71,9 +81,11 @@
 	<p>
 		A good starting point is to set the drums volume at the center of the range, and to adjust other
 		instruments from there using your ears. The drums, melody, chords and bass should all be easy to
-		distinguish. You may use some reference tracks you like within the same genre you are writing.
-		By comparing your mix to them, it helps you take your decisions on your own mix. Prefer songs
-		from experienced composers, as they are more likely to have a good mix.
+		distinguish. You may use some reference tracks you like within the same <TechTerm
+			>genre</TechTerm
+		> you are writing. By comparing your <TechTerm>mix</TechTerm> to them, it helps you take your decisions
+		on your own mix. Prefer songs from experienced composers, as they are more likely to have a good
+		mix.
 	</p>
 
 	<FramedTextBlock
@@ -85,10 +97,10 @@
 	<h2>Panning</h2>
 
 	<p>
-		Panning is a very trivial concept: it defines how much you hear a track on the left and right
-		channels. The lower, or the more tilted towards the left it is (on a knob), the more you hear
-		your track on the left side, the less you hear it on the right side, and vice versa. On BandLab,
-		it goes from -50 (full left, no right) to +50 (full right, no left).
+		<TechTerm>Panning</TechTerm> is a very trivial concept: it defines how much you hear a track on the
+		left and right channels. The lower, or the more tilted towards the left it is (on a knob), the more
+		you hear your track on the left side, the less you hear it on the right side, and vice versa. On
+		BandLab, it goes from -50 (full left, no right) to +50 (full right, no left).
 	</p>
 
 	<p>
@@ -100,10 +112,10 @@
 		If I take the example of my own mix, I have set the bass panning to -12, and the piano +25 to
 		the right, so that I can put the chords to the right, while still keeping the bass somewhat
 		centered (as in my case I use the piano to make the bass easier to hear). Melodies are -12 to
-		the left so that they can contrast from the chords. The background organ melody in the verse is
-		+12 to the right to put it somewhere between the main melody and the chords. Chord pads are also
-		to the right, as after testing it sounds better this way (being reinforced with the piano
-		chords). The rain and reverse cymbals are left at 0 (e.g. centered).
+		the left so that they can contrast from the chords. The background <TechTerm>organ</TechTerm> melody
+		in the verse is +12 to the right to put it somewhere between the main melody and the chords. Chord
+		<TechTerm>pads</TechTerm> are also to the right, as after testing it sounds better this way (being
+		reinforced with the piano chords). The rain and reverse cymbals are left at 0 (e.g. centered).
 	</p>
 
 	<FramedTextBlock
@@ -117,18 +129,19 @@
 	<p>
 		This one probably has to be the trickiest of those three topics, because it can alter the
 		character of a track, as we saw in an earlier chapter. The thing is, the more frequencies
-		clashes, the more muddy and hard to understand it sounds. So, how do we give room to everybody?
-		Here are some guidelines:
+		<TechTerm>clashes</TechTerm>, the more muddy and hard to understand it sounds. So, how do we
+		give room to everybody? Here are some guidelines:
 	</p>
 
 	<ul>
 		<li>
 			Pay attention to the dominant frequency of each instrument. The kick drum and the bass needs
-			room in the lows, so other instruments should not have too much low frequencies, for instance.
+			room in the <TechTerm>lows</TechTerm>, so other instruments should not have too much low
+			frequencies, for instance.
 		</li>
 		<li>
-			If you emphasize an area of an instrument (say, the mediums of a piano), it is best to
-			compensate by reducing the mediums of one or multiple other instruments.
+			If you emphasize an area of an instrument (say, the <TechTerm>mediums</TechTerm> of a piano), it
+			is best to compensate by reducing the mediums of one or multiple other instruments.
 		</li>
 		<li>
 			Get rid of useless frequencies, usually lows on a track which do not produce much sound but
@@ -137,6 +150,9 @@
 		<li>
 			Keep in mind that your song will be played on many different kind of devices. If a bass or a
 			kick do not have a bit of medium and high frequencies, they won't be heard on cheap devices!
+			Pay also attention to the limits of the device you are currently listening from: if it
+			emphasizes the bass, and if the overall spectrum restitution is balanced. You can sometimes
+			find this information online per device.
 		</li>
 	</ul>
 
@@ -145,7 +161,7 @@
 	<p>
 		The volume and frequencies filtering were present in the examples from previous chapters (it
 		didn't make sense to remove them). You can hear below the difference between having, or not
-		having panning applied:
+		having <TechTerm>panning</TechTerm> applied:
 	</p>
 
 	<label>
