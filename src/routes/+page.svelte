@@ -23,6 +23,7 @@
         <li><a href="./6-arrangement-from-a-loop-to-a-song">post 6</a></li>
         <li><a href="./7-effects-giving-depth-to-instruments">post 7</a></li>
         <li><a href="./8-effects-in-practice">post 8</a></li>
+        <li><a href="./9-mixing-make-it-breath">post 9</a></li>
     </ul>
 {/if}
 
