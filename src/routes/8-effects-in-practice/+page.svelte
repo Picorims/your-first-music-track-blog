@@ -8,12 +8,12 @@
     */
 
 	import { config } from '$lib/config';
-	import { BlogPage, FramedTextBlock, Audio, Quote, Image } from 'svelte-blogging-kit';
+	import { BlogPage, FramedTextBlock, Audio, Image } from 'svelte-blogging-kit';
 
-	import ExternalLink from '$lib/ExternalLink.svelte';
+	import TechTerm from '$lib/TechTerm.svelte';
 
-	import songNoEffects from "./your_first_music_track_blog__chap_6_to_9__full_song__DISABLED_mixing.mp3"
-	import songWithEffects from "./your_first_music_track_blog__chap_6_to_9__full_song__effects_only.mp3"
+	import songNoEffects from './your_first_music_track_blog__chap_6_to_9__full_song__DISABLED_mixing.mp3';
+	import songWithEffects from './your_first_music_track_blog__chap_6_to_9__full_song__effects_only.mp3';
 
 	import drumNoEffects from './drum_loop_chorus.wav';
 	import drumWithEffects from './drum_loop_chorus_with_effects.wav';
@@ -86,6 +86,10 @@
 		variant="note"
 	/>
 
+	<p>
+		Update (01/13/2025): I added a bit more explanation about the <TechTerm>compender</TechTerm> effect,
+		and bass mixing.
+	</p>
 
 	<p>
 		In the last chapter, I introduced a list of common effects commonly used in music production.
@@ -128,11 +132,15 @@
 	</p>
 	<p>
 		To do so, the BL Driver effects slightly destroy the signal, and make the drums sound a bit
-		"slobbery". Then, the limiter slightly reduce the dynamics amplitude ("volume contrast" if you
-		want), also to get the feel of low quality. I am not sure what the preset compender achieve, but
-		I believe that its goal is similar to the limiter while keeping a bit of dynamics. I then added
-		an EQ to amplify the low-mediums and reduce the highs, so that it sounds warmer and comfy.
-		Finally, the de-esser makes cymbals less shiny.
+		"slobbery". Then, the <TechTerm>limiter</TechTerm> slightly reduce the dynamics amplitude ("volume
+		contrast" if you want), also to get the feel of low quality. I am not sure what the preset <TechTerm
+			>compender</TechTerm
+		> achieve, but I believe that its goal is similar to the <TechTerm>limiter</TechTerm> while keeping
+		a bit of dynamics (it seems to amplify under a given threshold). I then added an <TechTerm
+			>EQ</TechTerm
+		> to amplify the <TechTerm>low-mediums</TechTerm> and reduce the <TechTerm>highs</TechTerm>, so
+		that it sounds warmer and comfy. Finally, the
+		<TechTerm>de-esser</TechTerm> makes cymbals less shiny (I didn't talk about this effect).
 	</p>
 
 	<label>
@@ -151,9 +159,12 @@
 
 	<p>
 		Again, I used the BL Driver effect to make the cymbal sound a bit altered. Because it is high
-		pitched, I reinforced the mediums this time, but kept some highs to make it stand out in the mix
-		(there aren't much highs in all the tracks). To give it depth, I added a subtle delay and a
-		semi-long reverb (the delay and reverb are a common combo by the way).
+		pitched, I reinforced the <TechTerm>mediums</TechTerm> this time, but kept some <TechTerm
+			>highs</TechTerm
+		> to make it stand out in the <TechTerm>mix</TechTerm> (there aren't much highs in all the tracks).
+		To give it depth, I added a subtle <TechTerm>delay</TechTerm> and a semi-long <TechTerm
+			>reverb</TechTerm
+		> (the delay and reverb are a common combo by the way).
 	</p>
 
 	<label>
@@ -179,12 +190,15 @@
 	<h2>Piano</h2>
 
 	<p>
-		This pipeline is based of the "bright reverb" preset. The chorus slightly color and reinforce
-		the stereo of the piano. A subtle reverb then gives it a bit more depth. The EQ reinforces the
-		mediums which is the dominant area of a piano, so that it stands out more. But to not make it
-		too bright, the highs are slightly reduced. Then comes a compressor to make it a bit more
-		energetic and powerful. Finally, to give it more rhythmic and make it more interesting, I added
-		a shy sidechain, which reinforces the kick (which we don't hear in the following examples).
+		This pipeline is based on the "bright reverb" preset. The <TechTerm>chorus</TechTerm> slightly color
+		and reinforce the <TechTerm>stereo</TechTerm> of the piano. A subtle <TechTerm>reverb</TechTerm>
+		then gives it a bit more depth. The <TechTerm>EQ</TechTerm> reinforces the mediums which is the dominant
+		area of a piano, so that it stands out more. But to not make it too bright, the <TechTerm
+			>highs</TechTerm
+		> are slightly reduced. Then comes a <TechTerm>compressor</TechTerm> to make it a bit more energetic
+		and powerful. Finally, to give it more rhythmic and make it more interesting, I added a shy <TechTerm
+			>sidechain</TechTerm
+		>, which reinforces the <TechTerm>kick</TechTerm> (which we don't hear in the following examples).
 	</p>
 
 	<label>
@@ -204,7 +218,9 @@
 	<p>
 		The bass instrument itself is mostly left untouched as it only serves as a low frequencies
 		booster. Most of the dynamics comes from the superposed piano which plays the same notes at a
-		very low pitch. Hence, the lows are reinforced, and the compressor boosts the bass a bit.
+		very low pitch (adding medium and high frequencies for cheap devices). Hence, the <TechTerm
+			>lows</TechTerm
+		> are reinforced, and the <TechTerm>compressor</TechTerm> boosts the bass a bit.
 	</p>
 
 	<FramedTextBlock
@@ -229,7 +245,8 @@
 	<p>
 		I used a similar approach as the piano for the electric piano used in the melody. So I won't go
 		into the details, but you can have a look at the settings below and listen to the examples to
-		compare. I just use different settings or modules (space maker is a reverb).
+		compare. I just use different settings or modules (space maker is a <TechTerm>reverb</TechTerm
+		>).
 	</p>
 
 	<label>
@@ -256,9 +273,10 @@
 
 	<p>
 		The explanation is the same as for the aggressive electric piano. The only twist is that there
-		are two chained echo effects, a fast, subtle one and a slower, more pronounced one. I could have
-		put an EQ, but didn't feel the need. BandLab doesn't provide frequency spectrums in the free
-		tier, so it is hard to spot silent but problematic frequencies.
+		are two chained <TechTerm>echo</TechTerm> effects, a fast, subtle one and a slower, more pronounced
+		one. I could have put an <TechTerm>EQ</TechTerm>, but didn't feel the need. BandLab doesn't
+		provide frequency spectrums in the free tier, so it is hard to spot silent but problematic
+		frequencies.
 	</p>
 
 	<label>
@@ -284,10 +302,12 @@
 	<h2>Organ</h2>
 
 	<p>
-		The chorus is particularly powerful on mono like sounds (where the left and right channels sound
-		almost the same, or exactly for true mono). The VibeToo is a custom effect from BandLab, which
-		seems to be some kind of advanced pitch shifting effect. Here, it helps breaking the monotony,
-		but pitch shifting can be used for many purposes, from weirdness to anxiety!
+		The <TechTerm>chorus</TechTerm> is particularly powerful on <TechTerm>mono</TechTerm> like sounds
+		(where the left and right channels sound almost the same, or exactly for true mono). The VibeToo
+		is a custom effect from BandLab, which seems to be some kind of advanced <TechTerm
+			>pitch shifting</TechTerm
+		> effect. Here, it helps breaking the monotony, but pitch shifting can be used for many purposes,
+		from weirdness to anxiety!
 	</p>
 
 	<label>
@@ -304,8 +324,11 @@
 	<h2>Rain</h2>
 
 	<p>
-		Here, the lows are increased to give warmth, and the high to reinforce the rain effect. The
-		reverb is here to improve the stereo and immersion of the rain.
+		Here, the <TechTerm>lows</TechTerm> are increased to give warmth, and the <TechTerm
+			>highs</TechTerm
+		> to reinforce the rain effect. The <TechTerm>reverb</TechTerm> is here to improve the <TechTerm
+			>stereo</TechTerm
+		> and immersion of the rain.
 	</p>
 
 	<label>
@@ -323,12 +346,14 @@
 
 	<p>I know, I know, it is the last one I showcase here.</p>
 	<p>
-		This one is a great example of how sidechain can really add to making something more rhythmic.
-		Additionally, I make the pad shinier by increasing the highs, and lowering the lows. The
-		compressor only makes it more powerful. There is also a tremolo hidden within the instrument
-		preset (which I have no access to, unfortunately). This is what creates the feeling like you are
-		speaking in front of a fan with your voice trembling. This one is subtle, but can be easily
-		heard in the example with no effect.
+		This one is a great example of how <TechTerm>sidechain</TechTerm> can really add to making something
+		more rhythmic. Additionally, I make the <TechTerm>pad</TechTerm> shinier by increasing the <TechTerm
+			>highs</TechTerm
+		>, and lowering the <TechTerm>lows</TechTerm>. The <TechTerm>compressor</TechTerm> only makes it
+		more powerful. There is also a <TechTerm>tremolo</TechTerm> hidden within the instrument preset (which
+		I have no access to, unfortunately). This is what creates the feeling like you are speaking in front
+		of a fan with your voice trembling. This one is subtle, but can be easily heard in the example with
+		no effect.
 	</p>
 
 	<label>
@@ -360,8 +385,8 @@
 	</p>
 
 	<p>
-		In the next chapter, I will talk about how to add more depth to our mix. This one will be
-		easier, and much shorter, as I will stick to some handy tips.
+		In the next chapter, I will talk about how to add more depth to our <TechTerm>mix</TechTerm>.
+		This one will be easier, and much shorter, as I will stick to some handy tips.
 	</p>
 
 	<p>
