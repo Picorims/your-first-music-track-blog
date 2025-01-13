@@ -24,6 +24,7 @@
         <li><a href="./7-effects-giving-depth-to-instruments">post 7</a></li>
         <li><a href="./8-effects-in-practice">post 8</a></li>
         <li><a href="./9-mixing-make-it-breath">post 9</a></li>
+        <li><a href="./10-mastering-the-last-touch">post 10</a></li>
     </ul>
 {/if}
 

@@ -28,6 +28,7 @@
 	import compressionEnabled from './compression_enabled.wav';
 
 	import graphicEqPiano from './graphic_eq_piano.png';
+	import TechTerm from '$lib/TechTerm.svelte';
 </script>
 
 <BlogPage
@@ -43,10 +44,10 @@
 {#snippet postContent()}
 	<p>
 		In the last chapter we saw how to turn a loop into a full song. However we didn't cover yet the
-		sound processing aspect: mixing. Mixing is an important step both in defining the
-		characteristics of instruments (giving them personality), and in trying to make them sound good
-		together. It is also an integral part of making sure that our song sounds good on all devices,
-		from the hi-fi setup to the old car speakers.
+		sound processing aspect: <TechTerm>mixing</TechTerm>. Mixing is an important step both in
+		defining the characteristics of instruments (giving them personality), and in trying to make
+		them sound good together. It is also an integral part of making sure that our song sounds good
+		on all devices, from the hi-fi setup to the old car speakers.
 	</p>
 	<FramedTextBlock
 		title="Note"
@@ -63,9 +64,9 @@
 
 	<h3>Delay or echo</h3>
 	<p>
-		Delay is a very common musical effect to give more depth to a sound. It is a natural effect
-		occurring when sound bounces on distant surfaces, you know, the famous "echo, echo, echo...". It
-		is usually subtle, but here is an exaggerated example:
+		<TechTerm>Delay</TechTerm> is a very common musical effect to give more depth to a sound. It is a
+		natural effect occurring when sound bounces on distant surfaces, you know, the famous "echo, echo,
+		echo...". It is usually subtle, but here is an exaggerated example:
 	</p>
 	<label>
 		Without delay:
@@ -78,10 +79,11 @@
 
 	<h3>Reverberation</h3>
 	<p>
-		Reverberation is just a very fast delay, and is present in pretty much every single environment.
-		Hence, it is also an extremely common effect. Churches, halls, theaters, tunnels, caves, or even
-		basic rooms all have it. Thus, it is a great effect to reproduce such environments in the
-		listener's brain! The following example could be an announcement jingle heard in an airport:
+		<TechTerm>Reverberation</TechTerm> is just a very fast <TechTerm>delay</TechTerm>, and is
+		present in pretty much every single environment. Hence, it is also an extremely common effect.
+		Churches, halls, theaters, tunnels, caves, or even basic rooms all have it. Thus, it is a great
+		effect to reproduce such environments in the listener's brain! The following example could be an
+		announcement jingle heard in an airport:
 	</p>
 	<label>
 		Without reverb:
@@ -94,9 +96,12 @@
 
 	<h3>Equalizer</h3>
 	<p>
-		The equalizer, or EQ, is part of the family of filters. In fact, it is usually a combination of
-		low-pass, high-pass, and band-pass filters. It allows you to boost or reduce (or even mute) some
-		frequencies. It is both useful for making the mix breathe more, and for coloring the sound.
+		The <TechTerm>equalizer</TechTerm>, or <TechTerm>EQ</TechTerm>, is part of the family of <TechTerm
+			>filters</TechTerm
+		>. In fact, it is usually a combination of
+		<TechTerm>low-pass</TechTerm>, <TechTerm>high-pass</TechTerm>, and <TechTerm>band-pass</TechTerm
+		> filters. It allows you to boost or reduce (or even mute) some <TechTerm>frequencies</TechTerm
+		>. It is both useful for making the mix breathe more, and for coloring the sound.
 	</p>
 	<p>Here is an example of a muted piano achieved using an EQ:</p>
 	<label>
@@ -122,9 +127,11 @@
 
 	<h3>Chorus</h3>
 	<p>
-		The chorus creates a subtle delay between the left and right channels. It can be used either as
-		an aesthetic effect, or to give more depth to a sound by simulating a stereo effect. Here is
-		below an example of an aesthetic use:
+		The <TechTerm>chorus</TechTerm> creates a subtle delay between the <TechTerm>left</TechTerm> and
+		<TechTerm>right</TechTerm>
+		<TechTerm>channels</TechTerm>. It can be used either as an aesthetic effect, or to give more
+		depth to a sound by simulating a <TechTerm>stereo</TechTerm> effect. Here is below an example of
+		an aesthetic use:
 	</p>
 	<label>
 		Without chorus:
@@ -137,11 +144,11 @@
 
 	<h3>Side chain - pumping effect</h3>
 	<p>
-		The side chain effect or pumping effect can be simply described as a muting effect applied
-		periodically, or when another sound is playing (for example, every time the kick drum is
-		played). It is a very common effect in electronic music to give more space, or even to reinforce
-		the kick drum depending of the intensity of the effect. In some DAWs or plugins, it is part of
-		the compressor as a setting.
+		The <TechTerm>side chain</TechTerm> effect or pumping effect can be simply described as a muting
+		effect applied periodically, or when another sound is playing (for example, every time the kick drum
+		is played). It is a very common effect in electronic music to give more space, or even to reinforce
+		the kick drum depending of the intensity of the effect. In some DAWs or plugins, it is part of the
+		compressor as a setting.
 	</p>
 	<label>
 		Without side chain:
@@ -154,10 +161,11 @@
 
 	<h3>Distortion and other damaging effects</h3>
 	<p>
-		Characteristic of some genres like rock or metal, distortion is a very common effect. Simply
-		put, it kinds of "destroy" the sound to make it more aggressive. Within the family of "damaging"
-		effects, we can also find the overdrive, saturation, or bit crusher for instance. Here is an
-		overdrive example:
+		Characteristic of some genres like rock or metal, <TechTerm>distortion</TechTerm> is a very common
+		effect. Simply put, it kinds of "destroy" the sound to make it more aggressive. Within the family
+		of "damaging" effects, we can also find the <TechTerm>overdrive</TechTerm>, <TechTerm
+			>saturation</TechTerm
+		>, or <TechTerm>bit crusher</TechTerm> for instance. Here is an overdrive example:
 	</p>
 	<label>
 		Without overdrive:
@@ -182,8 +190,11 @@
 		quote="compressors are for shaping dynamic range, and limiters are for catching peaks while preserving sonic integrity."
 	/>
 	<p>
-		Here is an example of a compressed sound (notice how the notes with a low volume sound louder
-		due to peaks being lowered and overall volume being increased; notice also that loud notes remain impactful):
+		Here is an example of a <TechTerm>compressed</TechTerm> sound (notice how the notes with a low <TechTerm
+			>volume</TechTerm
+		>
+		sound louder due to <TechTerm>peaks</TechTerm> being lowered and overall volume being increased;
+		notice also that loud notes remain impactful):
 	</p>
 	<label>
 		Without compression:
@@ -211,12 +222,13 @@
 	<h2>Resources</h2>
 	<ul>
 		<li>
-			Some equalizer examples: <ExternalLink href="https://emastered.com/blog/types-of-eq"
+			Some <TechTerm>equalizer</TechTerm> examples: <ExternalLink
+				href="https://emastered.com/blog/types-of-eq"
 				>https://emastered.com/blog/types-of-eq</ExternalLink
 			>
 		</li>
 		<li>
-			In depth comparison of compressor and limiter: <ExternalLink
+			In depth comparison of <TechTerm>compressor</TechTerm> and <TechTerm>limiter</TechTerm>: <ExternalLink
 				href="https://www.izotope.com/en/learn/compressor-vs-limiter.html"
 				>https://www.izotope.com/en/learn/compressor-vs-limiter.html</ExternalLink
 			>
