@@ -27,7 +27,7 @@
 
 {#snippet postContent()}
 	<Image
-		src={thumbnail}
+		src={base + thumbnail}
 		alt="pencils above a paper sketch"
 		caption="'Used Pen Lot on Paper' by Javier Gonzalez, https://www.pexels.com/photo/used-pen-lot-on-paper-89625/"
 	/>

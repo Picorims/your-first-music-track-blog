@@ -67,15 +67,15 @@
 		pitch! Here is how it looks when applying those units to the C Major scale:
 	</p>
 
-	<Image src={cScale} alt="C Major scale" caption="C Major scale" />
+	<Image src={base + cScale} alt="C Major scale" caption="C Major scale" />
 
 	<Image
-		src={cSaleMidi}
+		src={base + cSaleMidi}
 		alt="C Major scale on a MIDI grid"
 		caption="C Major scale on a MIDI grid. Yes, that is all the white keys on a piano! There is one tone from C to D, but one semitone from E to F. There is 1 octave from C4 to C5, the number indicate the octave."
 	/>
 
-	<Audio src={cScaleAudio} />
+	<Audio src={base + cScaleAudio} />
 
 	<p>
 		It is common to use letters for naming notes, I wrote the equivalent letter next to each note.
@@ -104,17 +104,17 @@
 	</p>
 
 	<Image
-		src={chordsExplanation}
+		src={base + chordsExplanation}
 		alt="Chords explanation"
 		caption="Chords explanation. The C chord is made of C (#1, from where we count), E (#3) and G (#5) notes, it is a triad. For B, in orange, the first note is B, then we loop back to the start to pick D as the third note, then F."
 	/>
 	<Image
-		src={chordsExplanationMidi}
+		src={base + chordsExplanationMidi}
 		alt="The same chords on a MIDI grid"
 		caption="The same chords on a MIDI grid. Notice how the last three chords sounds the same. That is the same chord! We just move some notes 12 semitones higher, or one octave higher."
 	/>
 
-	<Audio src={chordsExplanationAudio} />
+	<Audio src={base + chordsExplanationAudio} />
 
 	<p>
 		<ExternalLink href="https://muted.io/cheat-sheet/"
@@ -194,13 +194,13 @@
 	</p>
 
 	<!-- svelte-ignore a11y_media_has_caption -->
-	<Image src={chordProgression} alt="Chord progression" caption="The chord progression." />
+	<Image src={base + chordProgression} alt="Chord progression" caption="The chord progression." />
 	<Image
-		src={chordProgressionMusicSheet}
+		src={base + chordProgressionMusicSheet}
 		alt="Chord progression music sheet"
 		caption="The chord progression music sheet."
 	/>
-	<Audio src={chordProgressionAudio} loop />
+	<Audio src={base + chordProgressionAudio} loop />
 
 	<p>
 		I started with a C major (<Chord name="C" />) chord to set a happy mood, during 1 bar as a

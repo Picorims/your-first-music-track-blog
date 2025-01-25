@@ -29,6 +29,7 @@
 
 	import graphicEqPiano from './graphic_eq_piano.png';
 	import TechTerm from '$lib/TechTerm.svelte';
+
 </script>
 
 <BlogPage
@@ -70,11 +71,11 @@
 	</p>
 	<label>
 		Without delay:
-		<Audio src={delayDisabled} />
+		<Audio src={base + delayDisabled} />
 	</label>
 	<label>
 		With delay:
-		<Audio src={delayEnabled} />
+		<Audio src={base + delayEnabled} />
 	</label>
 
 	<h3>Reverberation</h3>
@@ -87,11 +88,11 @@
 	</p>
 	<label>
 		Without reverb:
-		<Audio src={reverbDisabled} />
+		<Audio src={base + reverbDisabled} />
 	</label>
 	<label>
 		With reverb:
-		<Audio src={reverbEnabled} />
+		<Audio src={base + reverbEnabled} />
 	</label>
 
 	<h3>Equalizer</h3>
@@ -106,15 +107,15 @@
 	<p>Here is an example of a muted piano achieved using an EQ:</p>
 	<label>
 		Without EQ:
-		<Audio src={eqDisabled} />
+		<Audio src={base + eqDisabled} />
 	</label>
 	<label>
 		With EQ:
-		<Audio src={eqEnabled} />
+		<Audio src={base + eqEnabled} />
 	</label>
 
 	<Image
-		src={graphicEqPiano}
+		src={base + graphicEqPiano}
 		alt="The equalizer applied to the piano (dB level modification based on the frequency)."
 		caption="The equalizer applied to the piano (dB level modification based on the frequency)."
 	/>
@@ -135,11 +136,11 @@
 	</p>
 	<label>
 		Without chorus:
-		<Audio src={chorusDisabled} />
+		<Audio src={base + chorusDisabled} />
 	</label>
 	<label>
 		With chorus:
-		<Audio src={chorusEnabled} />
+		<Audio src={base + chorusEnabled} />
 	</label>
 
 	<h3>Side chain - pumping effect</h3>
@@ -152,11 +153,11 @@
 	</p>
 	<label>
 		Without side chain:
-		<Audio src={sidechainDisabled} loop />
+		<Audio src={base + sidechainDisabled} loop />
 	</label>
 	<label>
 		With side chain:
-		<Audio src={sidechainEnabled} loop />
+		<Audio src={base + sidechainEnabled} loop />
 	</label>
 
 	<h3>Distortion and other damaging effects</h3>
@@ -169,11 +170,11 @@
 	</p>
 	<label>
 		Without overdrive:
-		<Audio src={overdriveDisabled} />
+		<Audio src={base + overdriveDisabled} />
 	</label>
 	<label>
 		With overdrive:
-		<Audio src={overdriveEnabled} />
+		<Audio src={base + overdriveEnabled} />
 	</label>
 
 	<h3>Compressor and limiter</h3>
@@ -198,11 +199,11 @@
 	</p>
 	<label>
 		Without compression:
-		<Audio src={compressionDisabled} loop />
+		<Audio src={base + compressionDisabled} loop />
 	</label>
 	<label>
 		With compression:
-		<Audio src={compressionEnabled} loop />
+		<Audio src={base + compressionEnabled} loop />
 	</label>
 
 	<h2>Closing words</h2>

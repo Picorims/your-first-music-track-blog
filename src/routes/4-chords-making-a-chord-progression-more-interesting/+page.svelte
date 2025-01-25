@@ -24,6 +24,7 @@
 	import chordsP1 from './chords_variation_p1.png';
 	import chordsP2 from './chords_variation_p2.png';
 	import chordsAnnotated from './chords_variation_full_annotated.png';
+
 </script>
 
 <BlogPage
@@ -54,16 +55,16 @@
 	<p>As a reminder, here is the chord progression we ended up with in the last chapter:</p>
 
 	<Image
-		src={chordProgressionC3}
+		src={base + chordProgressionC3}
 		alt="Chord progression as MIDI from chapter 3"
 		caption="Chord progression as MIDI from chapter 3"
 	/>
 	<Image
-		src={chordProgressionMusicSheetC3}
+		src={base + chordProgressionMusicSheetC3}
 		alt="Chord progression as music sheet from chapter 3"
 		caption="Chord progression as music sheet from chapter 3"
 	/>
-	<Audio src={chordProgressionAudioC3} />
+	<Audio src={base + chordProgressionAudioC3} />
 
 	<p>
 		It sounds good, and actually some songs keep things simple like that. However, it is totally
@@ -75,10 +76,10 @@
 
 	<p>With a bit of seasoning, this is what I personally came up with (I added the drum loop from chapter 2 in the audio):</p>
 
-	<Audio src={chordsAudio} />
-	<Video src={chordsVideo} />
+	<Audio src={base + chordsAudio} />
+	<Video src={base + chordsVideo} />
 	<Image
-		src={chordsAnnotated}
+		src={base + chordsAnnotated}
 		alt="Chords variations, annotated with note names to help you. Notice that I doubled the loop length, duplicating the pattern to slightly change the second occurence."
 		caption="Chords variations, annotated with note names to help you. Notice that I doubled the loop length, duplicating the pattern to slightly change the second occurence."
 	/>
@@ -91,7 +92,7 @@
 	</p>
 
 	<Image
-		src={chordsP1}
+		src={base + chordsP1}
 		alt="Chords variations, first part"
 		caption="Chords variations, first part"
 	/>
@@ -175,7 +176,7 @@
 	</p>
 
 	<Image
-		src={chordsP2}
+		src={base + chordsP2}
 		alt="Chords variations, second part"
 		caption="Chords variations, second part"
 	/>

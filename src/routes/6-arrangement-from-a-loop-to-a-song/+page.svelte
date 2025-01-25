@@ -14,6 +14,7 @@
 	import songNoMixingNoMastering from './full_song_no_mixing_no_mastering.mp3';
 	import ExternalLink from '$lib/ExternalLink.svelte';
 	import TechTerm from '$lib/TechTerm.svelte';
+
 </script>
 
 <BlogPage
@@ -124,7 +125,7 @@
 		variant="note"
 	/>
 
-	<Audio src={songNoMixingNoMastering} />
+	<Audio src={base + songNoMixingNoMastering} />
 	<p>
 		License of the track: <ExternalLink href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
 			>CC BY-NC-ND 4.0</ExternalLink

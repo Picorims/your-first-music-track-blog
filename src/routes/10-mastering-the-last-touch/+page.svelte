@@ -16,6 +16,8 @@
 	import contextMenuMasteringImg from './context_menu_mastering.png';
 	import songWithoutMastering from './your_first_music_track_blog__chap_6_to_9__full_song__mixing_v2.mp3';
 	import songWithMastering from './Walking Under The Rain - Charly Schmidt aka Picorims - mastered.mp3';
+
+	import { base } from '$app/paths';
 </script>
 
 <BlogPage
@@ -51,7 +53,7 @@
 	</p>
 
 	<Image
-		src={contextMenuMasteringImg}
+		src={base + contextMenuMasteringImg}
 		alt="Context menu with the 'Apply Mastering' option highlighted"
 	/>
 
@@ -102,12 +104,12 @@
 
 	<label>
 		Without mastering:
-		<Audio src={songWithoutMastering} />
+		<Audio src={base + songWithoutMastering} />
 	</label>
 
 	<label>
 		With mastering:
-		<Audio src={songWithMastering} />
+		<Audio src={base + songWithMastering} />
 	</label>
 
 	<h2>That's it?</h2>
@@ -123,7 +125,7 @@
 			href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
 			>https://creativecommons.org/licenses/by-nc-nd/4.0/</ExternalLink
 		>)
-		<Audio src={songWithMastering} />
+		<Audio src={base + songWithMastering} />
 	</label>
 
 	<h2>Wrapping up</h2>

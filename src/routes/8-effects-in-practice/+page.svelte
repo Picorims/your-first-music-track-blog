@@ -11,6 +11,8 @@
 	import { BlogPage, FramedTextBlock, Audio, Image } from 'svelte-blogging-kit';
 
 	import TechTerm from '$lib/TechTerm.svelte';
+	import { base } from '$app/paths';
+
 
 	import songNoEffects from './your_first_music_track_blog__chap_6_to_9__full_song__DISABLED_mixing.mp3';
 	import songWithEffects from './your_first_music_track_blog__chap_6_to_9__full_song__effects_only.mp3';
@@ -116,11 +118,11 @@
 
 	<label>
 		Full song without effects:
-		<Audio src={songNoEffects} />
+		<Audio src={base + songNoEffects} />
 	</label>
 	<label>
 		Full song with effects:
-		<Audio src={songWithEffects} />
+		<Audio src={base + songWithEffects} />
 	</label>
 
 	<h2>Drums</h2>
@@ -145,15 +147,15 @@
 
 	<label>
 		Drum loop without effects:
-		<Audio src={drumNoEffects} loop />
+		<Audio src={base + drumNoEffects} loop />
 	</label>
 	<label>
 		Drum loop with effects:
-		<Audio src={drumWithEffects} loop />
+		<Audio src={base + drumWithEffects} loop />
 	</label>
 
-	<Image src={drumEffectsImg1} alt="Drum loop effects part 1" caption="Drum loop effects part 1" />
-	<Image src={drumEffectsImg2} alt="Drum loop effects part 2" caption="Drum loop effects part 2" />
+	<Image src={base + drumEffectsImg1} alt="Drum loop effects part 1" caption="Drum loop effects part 1" />
+	<Image src={base + drumEffectsImg2} alt="Drum loop effects part 2" caption="Drum loop effects part 2" />
 
 	<h2>Reverse cymbal</h2>
 
@@ -169,20 +171,20 @@
 
 	<label>
 		Reverse cymbal without effects:
-		<Audio src={cymbalNoEffects} />
+		<Audio src={base + cymbalNoEffects} />
 	</label>
 	<label>
 		Reverse cymbal with effects:
-		<Audio src={cymbalWithEffects} />
+		<Audio src={base + cymbalWithEffects} />
 	</label>
 
 	<Image
-		src={cymbalEffectsImg1}
+		src={base + cymbalEffectsImg1}
 		alt="Reverse cymbal effects part 1"
 		caption="Reverse cymbal effects part 1"
 	/>
 	<Image
-		src={cymbalEffectsImg2}
+		src={base + cymbalEffectsImg2}
 		alt="Reverse cymbal effects part 2"
 		caption="Reverse cymbal effects part 2"
 	/>
@@ -203,15 +205,15 @@
 
 	<label>
 		Piano without effects:
-		<Audio src={pianoNoEffects} loop />
+		<Audio src={base + pianoNoEffects} loop />
 	</label>
 	<label>
 		Piano with effects:
-		<Audio src={pianoWithEffects} loop />
+		<Audio src={base + pianoWithEffects} loop />
 	</label>
 
-	<Image src={pianoEffectsImg1} alt="Piano effects part 1" caption="Piano effects part 1" />
-	<Image src={pianoEffectsImg2} alt="Piano effects part 2" caption="Piano effects part 2" />
+	<Image src={base + pianoEffectsImg1} alt="Piano effects part 1" caption="Piano effects part 1" />
+	<Image src={base + pianoEffectsImg2} alt="Piano effects part 2" caption="Piano effects part 2" />
 
 	<h2>Bass</h2>
 
@@ -231,14 +233,14 @@
 
 	<label>
 		Bass without effects:
-		<Audio src={bassNoEffects} loop />
+		<Audio src={base + bassNoEffects} loop />
 	</label>
 	<label>
 		Bass with effects:
-		<Audio src={bassWithEffects} loop />
+		<Audio src={base + bassWithEffects} loop />
 	</label>
 
-	<Image src={bassEffectsImg} alt="Bass effects" caption="Bass effects" />
+	<Image src={base + bassEffectsImg} alt="Bass effects" caption="Bass effects" />
 
 	<h2>Agressive electric piano (chorus melody)</h2>
 
@@ -251,20 +253,20 @@
 
 	<label>
 		Aggressive electric piano without effects:
-		<Audio src={aggressiveElecPianoNoEffects} loop />
+		<Audio src={base + aggressiveElecPianoNoEffects} loop />
 	</label>
 	<label>
 		Aggressive electric piano with effects:
-		<Audio src={aggressiveElecPianoWithEffects} loop />
+		<Audio src={base + aggressiveElecPianoWithEffects} loop />
 	</label>
 
 	<Image
-		src={aggressiveElecPianoEffectsImg1}
+		src={base + aggressiveElecPianoEffectsImg1}
 		alt="Agressive electric piano effects part 1"
 		caption="Agressive electric piano effects part 1"
 	/>
 	<Image
-		src={aggressiveElecPianoEffectsImg2}
+		src={base + aggressiveElecPianoEffectsImg2}
 		alt="Agressive electric piano effects part 2"
 		caption="Agressive electric piano effects part 2"
 	/>
@@ -281,20 +283,20 @@
 
 	<label>
 		Soft electric piano without effects:
-		<Audio src={softElecPianoNoEffects} loop />
+		<Audio src={base + softElecPianoNoEffects} loop />
 	</label>
 	<label>
 		Soft electric piano with effects:
-		<Audio src={softElecPianoWithEffects} loop />
+		<Audio src={base + softElecPianoWithEffects} loop />
 	</label>
 
 	<Image
-		src={softElecPianoEffectsImg1}
+		src={base + softElecPianoEffectsImg1}
 		alt="Soft electric piano effects part 1"
 		caption="Soft electric piano effects part 1"
 	/>
 	<Image
-		src={softElecPianoEffectsImg2}
+		src={base + softElecPianoEffectsImg2}
 		alt="Soft electric piano effects part 2"
 		caption="Soft electric piano effects part 2"
 	/>
@@ -312,14 +314,14 @@
 
 	<label>
 		Organ without effects:
-		<Audio src={organNoEffects} loop />
+		<Audio src={base + organNoEffects} loop />
 	</label>
 	<label>
 		Organ with effects:
-		<Audio src={organWithEffects} loop />
+		<Audio src={base + organWithEffects} loop />
 	</label>
 
-	<Image src={organEffectsImg} alt="Organ effects" caption="Organ effects" />
+	<Image src={base + organEffectsImg} alt="Organ effects" caption="Organ effects" />
 
 	<h2>Rain</h2>
 
@@ -333,14 +335,14 @@
 
 	<label>
 		Rain without effects:
-		<Audio src={rainNoEffects} loop />
+		<Audio src={base + rainNoEffects} loop />
 	</label>
 	<label>
 		Rain with effects:
-		<Audio src={rainWithEffects} loop />
+		<Audio src={base + rainWithEffects} loop />
 	</label>
 
-	<Image src={rainEffectsImg} alt="Rain effects" caption="Rain effects" />
+	<Image src={base + rainEffectsImg} alt="Rain effects" caption="Rain effects" />
 
 	<h2>Chorus pad</h2>
 
@@ -358,14 +360,14 @@
 
 	<label>
 		Pad without effects:
-		<Audio src={padNoEffects} loop />
+		<Audio src={base + padNoEffects} loop />
 	</label>
 	<label>
 		Pad with effects:
-		<Audio src={padWithEffects} loop />
+		<Audio src={base + padWithEffects} loop />
 	</label>
 
-	<Image src={padEffectsImg} alt="Pad effects" caption="Pad effects" />
+	<Image src={base + padEffectsImg} alt="Pad effects" caption="Pad effects" />
 
 	<h2>Closing words</h2>
 

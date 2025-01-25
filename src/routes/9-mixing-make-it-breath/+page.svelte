@@ -15,6 +15,9 @@
 
 	import songWithoutPanning from './your_first_music_track_blog__chap_6_to_9__full_song__effects_only.mp3';
 	import songWithPanning from './your_first_music_track_blog__chap_6_to_9__full_song__mixing_v2.mp3';
+
+	import { base } from '$app/paths';
+
 </script>
 
 <BlogPage
@@ -166,11 +169,11 @@
 
 	<label>
 		The track without panning:
-		<Audio src={songWithoutPanning} />
+		<Audio src={base + songWithoutPanning} />
 	</label>
 	<label>
 		The track with panning:
-		<Audio src={songWithPanning} />
+		<Audio src={base + songWithPanning} />
 	</label>
 
 	<h2>Closing words</h2>

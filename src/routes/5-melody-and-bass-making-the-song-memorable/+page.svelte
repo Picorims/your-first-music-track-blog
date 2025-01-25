@@ -19,6 +19,7 @@
 	import fullSongPic from './full_song_midi.png';
 	import melodyAnalysis from './melody_analysis_v2.png';
 	import Chord from '$lib/Chord.svelte';
+
 </script>
 
 <BlogPage
@@ -80,17 +81,17 @@
 		Now it is your turn! And as always don't be too harsh on yourself! Here is mine for example:
 	</p>
 
-	<Audio src={melody} loop />
-	<Image src={melodyAnalysis} alt="Melody analysis." caption="Melody analysis." />
+	<Audio src={base + melody} loop />
+	<Image src={base + melodyAnalysis} alt="Melody analysis." caption="Melody analysis." />
 
 	<p>
 		And here is the melody together with the rest of the song (The bass line discussed below is
 		included, and the chord at the end of the 7th bar was slightly changed):
 	</p>
-	<Audio src={fullSong} loop />
+	<Audio src={base + fullSong} loop />
 
 	<Image
-		src={fullSongPic}
+		src={base + fullSongPic}
 		alt="Full song MIDI tracks."
 		caption="Full song MIDI tracks. The bass is made stronger by combining a piano and a bass."
 	/>
@@ -118,9 +119,9 @@
 		</li>
 	</ol>
 
-	<Audio src={bass} loop />
+	<Audio src={base + bass} loop />
 	<Image
-		src={bassLineAnnotated}
+		src={base + bassLineAnnotated}
 		alt="Bass line annotated."
 		caption="Bass line annotated. The red lines represent notes highlighting the chords (the last G anticipates the following G6 chord)."
 	/>
